@@ -1,0 +1,6 @@
+
+Crair variaveis de ambiente no seu path do sistema.
+
+"C:\Users\bma\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+
+C:\Users\bma\AppData\Local\Programs\Microsoft VS Code\Code.exe

@@ -1,0 +1,19 @@
+
+aws configure sso
+https://maestriacloud.awsapps.com/start/#
+
+[profile Prd]
+sso_session = Maestriacloud
+sso_account_id = 541016426344
+sso_role_name = PS-AdministratorAccess
+region = us-east-1
+
+[profile Dev]
+sso_session = Maestriacloud
+sso_account_id = 339712866703
+sso_role_name = PS-AdministratorAccess
+
+[sso-session Maestriacloud]
+sso_start_url = https://maestriacloud.awsapps.com/start/#
+sso_region = us-east-1
+sso_registration_scopes = sso:account:access

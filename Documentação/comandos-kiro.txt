@@ -1,0 +1,59 @@
+Para sincronizar ou ativar o Kiro CLI Pro, você provavelmente precisa:
+
+1. Verificar se há configuração de billing/assinatura:
+bash
+kiro-cli config list
+
+
+2. Ou verificar configurações da conta:
+bash
+kiro-cli account status
+
+
+3. Pode ser necessário autenticar/vincular com sua conta AWS:
+bash
+kiro-cli auth login
+
+Commands:
+  debug         Debug the app
+  settings      Customize appearance & behavior
+  setup         Setup cli components
+  update        Update the Kiro application
+  diagnostic    Run diagnostic tests
+  init          Generate the dotfiles for the given shell
+  theme         Get or set theme
+  issue         Create a new Github issue
+  login         Login
+  logout        Logout
+  whoami        Prints details about the current user
+  profile       Show the profile associated with this idc user
+  user          Manage your account
+  doctor        Fix and diagnose common issues
+  launch        Launch the desktop app
+  quit          Quit the desktop app
+  restart       Restart the desktop app
+  integrations  Manage system integrations
+  translate     Natural Language to Shell translation
+  dashboard     Open the dashboard
+  chat          AI assistant in your terminal
+  mcp           Model Context Protocol (MCP)
+  inline        Inline shell completions
+  agent         Agent root commands
+  acp           Agent Client Protocol (ACP)
+  help          Print this message or the help of the given subcommand(s)
+
+Options:
+  -v, --verbose...
+          Increase logging verbosity
+
+      --help-all
+          Print help for all subcommands
+
+      --agent <AGENT>
+          Launch chat with specified agent
+
+  -h, --help
+          Print help
+
+  -V, --version
+          Print version
