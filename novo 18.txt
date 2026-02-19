@@ -1,6 +1,0 @@
-
-
-
-
-@--davinci A sunset over a tranquil lake with mountains in the background --aspect 16:9
-@--davinci --preset Cinematic --ar 9:16 Homem de ferro da marvel de perfil

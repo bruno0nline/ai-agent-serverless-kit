@@ -28,6 +28,9 @@ Kit completo para criar Agentes de IA serverless com foco em:
 - ✅ Embeddings com Amazon Titan v2.0
 - ✅ Vector Database (S3 Vectors - mais barato)
 - ✅ Respostas contextualizadas baseadas em documentos
+- ✅ **Lambda Action Group** - Consulta de feriados brasileiros
+- ✅ **Guardrail** - Filtro de conteúdo ofensivo
+- ✅ **Lambda Layer** - Biblioteca holidays (Docker build)
 - ✅ Monitoramento com CloudWatch
 - ✅ Deploy em 15 minutos
 - ✅ Documentação completa
@@ -78,6 +81,30 @@ export REGION="us-east-1"
 │   ├── prompt-kiro.txt
 │   └── Script Bruno.txt
 │
+├── PythonAwsBedrockActionGroupDemo/                   # Lambda Action Group
+│   ├── lambda_function_bedrock.py                     # Handler para Bedrock
+│   ├── lambda_function_regular.py                     # Handler standalone
+│   ├── requirements.txt                               # Dependências Python
+│   ├── Dockerfile                                     # Build do Layer
+│   ├── create_zip.py                                  # Script auxiliar
+│   ├── COMANDOS-WINDOWS.md                            # Guia Windows
+│   ├── README.md                                      # Documentação
+│   └── test/                                          # Eventos de teste
+│       ├── lambda_function_bedrock/
+│       └── lambda_function_regular/
+│
+├── Lambda/                                            # Outras Lambdas
+│   ├── action-groups/
+│   │   ├── verificar-status-servico/
+│   │   ├── consultar-ticket/
+│   │   └── criar-ticket/
+│   ├── api/
+│   │   └── invoke-agent/
+│   ├── webhooks/
+│   │   └── slack-integration/
+│   ├── INTEGRATION-GUIDE.md
+│   └── README.md
+│
 ├── IA na AWS/
 │   ├── Kiro/                                          # Workspace Kiro IDE
 │   └── RAG-Knowledge-Base/                            # Documentos para RAG
@@ -123,28 +150,39 @@ export REGION="us-east-1"
 - [x] Criação de Knowledge Base de RH (PoliticasRH-KnowledgeBase)
 - [x] Análise de quotas do Bedrock
 - [x] Documentação completa de troubleshooting
-
-### 🔴 Bloqueado
-
-- [ ] Sincronizar Knowledge Base (aguardando quotas)
-- [ ] Testar Agent RH (aguardando quotas)
-- [ ] Implementar Multi-Agent (aguardando quotas)
-
-### 🟡 Em Andamento
-
 - [x] Abrir ticket AWS Support para aumentar quotas ✅ **Concluído 16/02/2026**
-- [ ] Aguardar aprovação de acesso ao Bedrock (24-48h)
-- [ ] Sincronizar Knowledge Base (após aprovação)
-- [ ] Testar Agent RH (após aprovação)
-- [ ] Implementar Multi-Agent (após aprovação)
+- [x] Acesso ao Bedrock liberado ✅ **Concluído 19/02/2026**
+- [x] Lambda Function para consulta de feriados (Action Group)
+- [x] Lambda Layer com biblioteca holidays (Docker)
+- [x] Integração Lambda + Bedrock Agent
+- [x] Guardrail implementado (Filtro-de-Conteudo-Ofensivo)
+- [x] Agent RH testado e funcionando
+
+### 🟢 Próximos Passos
+
+- [ ] Multi-Agent Collaboration (Módulo 62)
+- [ ] Bedrock Flows (Módulo 63)
+- [ ] Finalizar fundamentos do Bedrock
 
 ---
 
-## 🚨 Problema Atual: Throttling do Bedrock
+## 🚨 ~~Problema Atual: Throttling do Bedrock~~ ✅ RESOLVIDO
 
-**Erro:** HTTP 429 - "Too many tokens per day"  
-**Causa:** Quotas do Bedrock em 0.0 (sem acesso habilitado)  
-**Solução:** Abrir ticket AWS Support
+**Status:** ✅ **RESOLVIDO em 19/02/2026**
+
+~~**Erro:** HTTP 429 - "Too many tokens per day"~~  
+~~**Causa:** Quotas do Bedrock em 0.0 (sem acesso habilitado)~~  
+~~**Solução:** Abrir ticket AWS Support~~
+
+### ✅ Solução Implementada
+
+Ticket AWS Support #624012998785 foi resolvido com sucesso. A equipe AWS liberou o acesso aos modelos do Bedrock.
+
+**Resultado:**
+- ✅ Acesso aos modelos Bedrock liberado
+- ✅ Agent RH funcionando
+- ✅ Lambda Action Group integrada
+- ✅ Guardrail implementado
 
 ### 📖 Documentação Completa
 
@@ -152,8 +190,8 @@ export REGION="us-east-1"
 
 Este documento contém:
 - Análise completa do problema
-- Solução recomendada
-- Próximos passos claros
+- Solução implementada
+- Histórico do ticket AWS
 - Links para toda documentação
 
 ---
@@ -171,7 +209,18 @@ Este documento contém:
 │  (agent-rh-chatbot)                 │
 │                                     │
 │  Model: Amazon Nova Micro 1.0       │
-└──────┬──────────────────────────────┘
+│  Guardrail: Filtro-de-Conteudo-     │
+│             Ofensivo                │
+└──────┬──────────────────┬───────────┘
+       │                  │
+       │                  ▼
+       │         ┌─────────────────────┐
+       │         │  Lambda Function    │
+       │         │  (Consulta_Feriados)│
+       │         │                     │
+       │         │  Layer: holidays    │
+       │         │  Runtime: Python 3.13│
+       │         └─────────────────────┘
        │
        ▼
 ┌─────────────────────────────────────┐
@@ -349,5 +398,5 @@ Seguir instruções em: [`Documentação/Bedrock/RESUMO-EXECUTIVO.md`](Documenta
 
 ---
 
-**Última atualização:** 16/02/2026  
-**Versão:** 1.0
+**Última atualização:** 19/02/2026  
+**Versão:** 1.1 - Agent RH com Lambda Action Group e Guardrail funcionando

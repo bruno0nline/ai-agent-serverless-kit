@@ -1,5 +1,7 @@
 # Inteligência Artificial sem servidor na AWS
 
+https://www.linkedin.com/posts/harsh-tita_aws-kiro-rag-share-7429769178225717248-OBGF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkjG4kB5nubr6A1M_s7zf4LBcNdgglfTRwf
+
 ## Instalação do WSL no Windows
 
 ```bash
@@ -696,6 +698,61 @@ aws s3 ls s3://maestriatec-rag-knowledge-base/RH/ --recursive --profile Master
 - [ ] Criar Action Groups (se necessário)
 - [ ] Implementar Multi-Agent com supervisor e colaboradores
 - [ ] Testar orquestração entre múltiplos agentes
+
+---
+
+## AWS Lambda Functions
+
+### O que são Lambda Functions?
+
+AWS Lambda é um serviço de computação serverless que executa código em resposta a eventos sem necessidade de provisionar ou gerenciar servidores.
+
+**Características principais:**
+
+- **Serverless**: Sem gerenciamento de servidores
+- **Event-driven**: Acionado por eventos (API Gateway, S3, DynamoDB, etc)
+- **Pay-per-use**: Paga apenas pelo tempo de execução
+- **Auto-scaling**: Escala automaticamente
+- **Múltiplas linguagens**: Python, Node.js, Java, Go, etc
+
+### Lambda com Bedrock Agents
+
+Lambda functions são essenciais para estender as capacidades do Bedrock Agent através de **Action Groups**.
+
+**Action Groups** permitem que o Agent:
+- Execute ações em sistemas externos
+- Consulte APIs e bancos de dados
+- Processe dados em tempo real
+- Integre com ferramentas de terceiros
+
+**Fluxo de execução:**
+```
+Usuário → Agent → Decide usar Action → Lambda Function → Executa ação → Retorna resultado → Agent → Resposta final
+```
+
+### Casos de Uso para Consultoria de TI
+
+#### 1. Action Groups (Integração com Agent)
+
+**Consultar Tickets:**
+- Lambda que consulta sistema de tickets (Jira, ServiceNow)
+- Agent pode responder "Qual o status do ticket TKT-001?"
+- Retorna informações em tempo real
+
+**Verificar Status de Serviços:**
+- Lambda que consulta AWS (EC2, RDS, Lambda, S3)
+- Agent pode responder "Qual o status da instância i-123456?"
+- Monitora saúde dos recursos
+
+**Criar Tickets:**
+- Lambda que cria tickets automaticamente
+- Agent pode criar ticket baseado na conversa
+- Integra com sistemas de gerenciamento
+
+#### 2. Webhooks e Integrações
+
+**Slack Integration:**
+- Lambda recebe m
 
 
 

@@ -57,3 +57,52 @@ Options:
 
   -V, --version
           Print version
+
+
+
+
+
+
+https://kiro.dev/docs/cli/code-intelligence/
+
+
+## Comandos para Ambiente Virtual Python (Windows)
+
+### Criar Ambiente Virtual
+cd PythonAwsBedrockActionGroupDemo
+python -m venv venv
+
+### Ativar Ambiente Virtual
+venv\Scripts\activate
+
+### Instalar Dependências
+pip install -r requirements.txt
+
+### Desativar Ambiente Virtual
+deactivate
+
+### Verificar Pacotes Instalados
+pip list
+
+### Criar Lambda Layer (ZIP para AWS)
+
+#### 1. Criar diretório e instalar dependências
+mkdir python
+pip install -r requirements.txt -t python\
+
+#### 2. Criar ZIP - Opção A: PowerShell (Recomendado)
+Compress-Archive -Path python -DestinationPath aws-lambda-layer.zip -Force
+
+#### 2. Criar ZIP - Opção B: Python Script
+python create_zip.py
+
+#### 3. Upload para AWS
+aws lambda publish-layer-version --layer-name holiday-checker-layer --zip-file fileb://aws-lambda-layer.zip --compatible-runtimes python3.9 python3.10 python3.11 python3.12
+
+### Testar Lambda Localmente
+python lambda_function_regular.py
+
+### Limpeza
+rmdir /s /q python
+rmdir /s /q venv
+del aws-lambda-layer.zip

@@ -1,0 +1,1503 @@
+{
+  "conversation_id": "297e71e8-1a76-4964-b30b-ae44c95d9c97",
+  "next_message": null,
+  "history": [
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/home/bruno/AI",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "Prompt": {
+            "prompt": "kiro-cki chat --resume"
+          }
+        },
+        "timestamp": "2026-02-18T23:16:54.919471536-03:00",
+        "images": null
+      },
+      "assistant": {
+        "Response": {
+          "message_id": "75a4d34f-7719-4ff5-a1b6-b1ee031efcd7",
+          "content": "I see you're resuming a chat session. Based on the context provided, you're working on an **AI Agent Serverless Kit** for HR using Amazon Bedrock, RAG, and AWS services.\n\n**Current Project Status:**\n\nYour POC is validated and ready for production, but you're currently blocked by Bedrock quota issues:\n- **Problem:** HTTP 429 throttling - quotas at 0.0 (no Bedrock access enabled)\n- **Action Taken:** AWS Support ticket opened on 16/02/2026 ✅\n- **Waiting:** 24-48h for quota approval\n\n**What's Built:**\n- Knowledge Base: `PoliticasRH-KnowledgeBase` (HR policies)\n- Agent: `agent-rh-chatbot` (Amazon Nova Micro 1.0)\n- S3 bucket with HR documents (benefícios, código de conduta, férias)\n- Embeddings: Amazon Titan v2.0\n- Vector DB: S3 Vectors\n\n**Next Steps (after quota approval):**\n1. Sync Knowledge Base\n2. Test HR Agent\n3. Implement Multi-Agent architecture\n\n**Estimated Costs:** ~$0.21/month (POC) to ~$11.54/month (10K interactions)\n\nHow can I help you today? Are you checking on the quota status, want to prepare for testing after approval, or work on something else in the project?"
+        }
+      },
+      "request_metadata": {
+        "request_id": "98f8c0e2-4eb1-4469-bf7f-10348ee034a3",
+        "context_usage_percentage": 6.956,
+        "message_id": "75a4d34f-7719-4ff5-a1b6-b1ee031efcd7",
+        "request_start_timestamp_ms": 1771467414987,
+        "stream_end_timestamp_ms": 1771467423632,
+        "time_to_first_chunk": {
+          "secs": 2,
+          "nanos": 748036760
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 32000
+          },
+          {
+            "secs": 0,
+            "nanos": 13515801
+          },
+          {
+            "secs": 0,
+            "nanos": 40163301
+          },
+          {
+            "secs": 0,
+            "nanos": 69674701
+          },
+          {
+            "secs": 0,
+            "nanos": 46337401
+          },
+          {
+            "secs": 0,
+            "nanos": 38180401
+          },
+          {
+            "secs": 0,
+            "nanos": 35179501
+          },
+          {
+            "secs": 0,
+            "nanos": 41848001
+          },
+          {
+            "secs": 0,
+            "nanos": 62345101
+          },
+          {
+            "secs": 0,
+            "nanos": 92518502
+          },
+          {
+            "secs": 0,
+            "nanos": 51163701
+          },
+          {
+            "secs": 0,
+            "nanos": 41280301
+          },
+          {
+            "secs": 0,
+            "nanos": 36597801
+          },
+          {
+            "secs": 0,
+            "nanos": 82566002
+          },
+          {
+            "secs": 0,
+            "nanos": 150212003
+          },
+          {
+            "secs": 0,
+            "nanos": 53405601
+          },
+          {
+            "secs": 0,
+            "nanos": 50900
+          },
+          {
+            "secs": 0,
+            "nanos": 10700
+          },
+          {
+            "secs": 0,
+            "nanos": 6100
+          },
+          {
+            "secs": 0,
+            "nanos": 60606001
+          },
+          {
+            "secs": 0,
+            "nanos": 41905101
+          },
+          {
+            "secs": 0,
+            "nanos": 19100501
+          },
+          {
+            "secs": 0,
+            "nanos": 70771201
+          },
+          {
+            "secs": 0,
+            "nanos": 31868001
+          },
+          {
+            "secs": 0,
+            "nanos": 19471400
+          },
+          {
+            "secs": 0,
+            "nanos": 40653701
+          },
+          {
+            "secs": 0,
+            "nanos": 40604101
+          },
+          {
+            "secs": 0,
+            "nanos": 118431403
+          },
+          {
+            "secs": 0,
+            "nanos": 50500
+          },
+          {
+            "secs": 0,
+            "nanos": 2750700
+          },
+          {
+            "secs": 0,
+            "nanos": 62456801
+          },
+          {
+            "secs": 0,
+            "nanos": 39075301
+          },
+          {
+            "secs": 0,
+            "nanos": 30825801
+          },
+          {
+            "secs": 0,
+            "nanos": 31850200
+          },
+          {
+            "secs": 0,
+            "nanos": 36758501
+          },
+          {
+            "secs": 0,
+            "nanos": 51600201
+          },
+          {
+            "secs": 0,
+            "nanos": 27650901
+          },
+          {
+            "secs": 0,
+            "nanos": 103962802
+          },
+          {
+            "secs": 0,
+            "nanos": 30820601
+          },
+          {
+            "secs": 0,
+            "nanos": 98821301
+          },
+          {
+            "secs": 0,
+            "nanos": 245303606
+          },
+          {
+            "secs": 0,
+            "nanos": 49725701
+          },
+          {
+            "secs": 0,
+            "nanos": 19065300
+          },
+          {
+            "secs": 0,
+            "nanos": 79600
+          },
+          {
+            "secs": 0,
+            "nanos": 12000
+          },
+          {
+            "secs": 0,
+            "nanos": 29029801
+          },
+          {
+            "secs": 0,
+            "nanos": 86466902
+          },
+          {
+            "secs": 0,
+            "nanos": 52853601
+          },
+          {
+            "secs": 0,
+            "nanos": 32051501
+          },
+          {
+            "secs": 0,
+            "nanos": 91780902
+          },
+          {
+            "secs": 0,
+            "nanos": 100392902
+          },
+          {
+            "secs": 0,
+            "nanos": 32852201
+          },
+          {
+            "secs": 0,
+            "nanos": 50958901
+          },
+          {
+            "secs": 0,
+            "nanos": 18648300
+          },
+          {
+            "secs": 0,
+            "nanos": 42297601
+          },
+          {
+            "secs": 0,
+            "nanos": 59498201
+          },
+          {
+            "secs": 0,
+            "nanos": 28103401
+          },
+          {
+            "secs": 0,
+            "nanos": 34275701
+          },
+          {
+            "secs": 0,
+            "nanos": 45178701
+          },
+          {
+            "secs": 0,
+            "nanos": 46418401
+          },
+          {
+            "secs": 0,
+            "nanos": 76333901
+          },
+          {
+            "secs": 0,
+            "nanos": 45300
+          },
+          {
+            "secs": 0,
+            "nanos": 45042901
+          },
+          {
+            "secs": 0,
+            "nanos": 45352601
+          },
+          {
+            "secs": 0,
+            "nanos": 31581600
+          },
+          {
+            "secs": 0,
+            "nanos": 288042107
+          },
+          {
+            "secs": 0,
+            "nanos": 21165900
+          },
+          {
+            "secs": 0,
+            "nanos": 19986600
+          },
+          {
+            "secs": 0,
+            "nanos": 74900
+          },
+          {
+            "secs": 0,
+            "nanos": 10862501
+          },
+          {
+            "secs": 0,
+            "nanos": 75300
+          },
+          {
+            "secs": 0,
+            "nanos": 9065100
+          },
+          {
+            "secs": 0,
+            "nanos": 20424100
+          },
+          {
+            "secs": 0,
+            "nanos": 5914100
+          },
+          {
+            "secs": 0,
+            "nanos": 44850301
+          },
+          {
+            "secs": 0,
+            "nanos": 51384102
+          },
+          {
+            "secs": 0,
+            "nanos": 85188201
+          },
+          {
+            "secs": 0,
+            "nanos": 63522302
+          },
+          {
+            "secs": 0,
+            "nanos": 13344600
+          },
+          {
+            "secs": 0,
+            "nanos": 93558102
+          },
+          {
+            "secs": 0,
+            "nanos": 42511801
+          },
+          {
+            "secs": 0,
+            "nanos": 77412902
+          },
+          {
+            "secs": 0,
+            "nanos": 3904200
+          },
+          {
+            "secs": 0,
+            "nanos": 42606201
+          },
+          {
+            "secs": 0,
+            "nanos": 42952101
+          },
+          {
+            "secs": 0,
+            "nanos": 49690301
+          },
+          {
+            "secs": 0,
+            "nanos": 34529701
+          },
+          {
+            "secs": 0,
+            "nanos": 53609501
+          },
+          {
+            "secs": 0,
+            "nanos": 31204900
+          },
+          {
+            "secs": 0,
+            "nanos": 47793101
+          },
+          {
+            "secs": 0,
+            "nanos": 42347801
+          },
+          {
+            "secs": 0,
+            "nanos": 222914005
+          },
+          {
+            "secs": 0,
+            "nanos": 128223603
+          },
+          {
+            "secs": 0,
+            "nanos": 431200
+          },
+          {
+            "secs": 0,
+            "nanos": 200100
+          },
+          {
+            "secs": 0,
+            "nanos": 9118700
+          },
+          {
+            "secs": 0,
+            "nanos": 49700
+          },
+          {
+            "secs": 0,
+            "nanos": 18863801
+          },
+          {
+            "secs": 0,
+            "nanos": 44919801
+          },
+          {
+            "secs": 0,
+            "nanos": 32859600
+          },
+          {
+            "secs": 0,
+            "nanos": 59180402
+          },
+          {
+            "secs": 0,
+            "nanos": 43367101
+          },
+          {
+            "secs": 0,
+            "nanos": 43126201
+          },
+          {
+            "secs": 0,
+            "nanos": 73554501
+          },
+          {
+            "secs": 0,
+            "nanos": 33383201
+          },
+          {
+            "secs": 0,
+            "nanos": 30836701
+          },
+          {
+            "secs": 0,
+            "nanos": 52581201
+          },
+          {
+            "secs": 0,
+            "nanos": 40346601
+          },
+          {
+            "secs": 0,
+            "nanos": 34720200
+          },
+          {
+            "secs": 0,
+            "nanos": 41605501
+          },
+          {
+            "secs": 0,
+            "nanos": 45588701
+          },
+          {
+            "secs": 0,
+            "nanos": 40479601
+          },
+          {
+            "secs": 0,
+            "nanos": 40462501
+          },
+          {
+            "secs": 0,
+            "nanos": 40736101
+          },
+          {
+            "secs": 0,
+            "nanos": 59843501
+          },
+          {
+            "secs": 0,
+            "nanos": 32142801
+          },
+          {
+            "secs": 0,
+            "nanos": 33736001
+          },
+          {
+            "secs": 0,
+            "nanos": 37025101
+          },
+          {
+            "secs": 0,
+            "nanos": 46643601
+          },
+          {
+            "secs": 0,
+            "nanos": 316741907
+          },
+          {
+            "secs": 0,
+            "nanos": 17298500
+          },
+          {
+            "secs": 0,
+            "nanos": 73800
+          },
+          {
+            "secs": 0,
+            "nanos": 116300
+          }
+        ],
+        "user_prompt_length": 183,
+        "response_size": 1091,
+        "chat_conversation_type": "NotToolUse",
+        "tool_use_ids_and_names": [],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/home/bruno/AI",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "Prompt": {
+            "prompt": "todas as respostas em portugues brasil por favor"
+          }
+        },
+        "timestamp": "2026-02-18T23:17:46.748349757-03:00",
+        "images": null
+      },
+      "assistant": {
+        "Response": {
+          "message_id": "de4695e2-5dd2-43aa-afbd-4392f3f9c574",
+          "content": "Entendido! Todas as minhas respostas serão em português brasileiro a partir de agora.\n\n**Resumo do Status do Projeto:**\n\nVocê está trabalhando no **AI Agent Serverless Kit** para RH usando Amazon Bedrock e RAG.\n\n**Situação Atual:**\n- ✅ POC validada e pronta para produção\n- 🔴 Bloqueado por quotas do Bedrock (HTTP 429)\n- ✅ Ticket AWS Support aberto em 16/02/2026\n- ⏳ Aguardando aprovação (24-48h)\n\n**O que já está pronto:**\n- Knowledge Base: `PoliticasRH-KnowledgeBase`\n- Agent: `agent-rh-chatbot` (Amazon Nova Micro 1.0)\n- Documentos RH no S3\n- Embeddings: Amazon Titan v2.0\n\n**Custos estimados:** ~$0,21/mês (POC) até ~$11,54/mês (10K interações)\n\nComo posso te ajudar hoje? Quer verificar o status das quotas, preparar os testes para depois da aprovação, ou trabalhar em outra parte do projeto?"
+        }
+      },
+      "request_metadata": {
+        "request_id": "96f98ac5-2f09-436a-a205-a60655b4d025",
+        "context_usage_percentage": 7.164,
+        "message_id": "de4695e2-5dd2-43aa-afbd-4392f3f9c574",
+        "request_start_timestamp_ms": 1771467466749,
+        "stream_end_timestamp_ms": 1771467471826,
+        "time_to_first_chunk": {
+          "secs": 2,
+          "nanos": 14189244
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 19600
+          },
+          {
+            "secs": 0,
+            "nanos": 44463901
+          },
+          {
+            "secs": 0,
+            "nanos": 38175101
+          },
+          {
+            "secs": 0,
+            "nanos": 51050601
+          },
+          {
+            "secs": 0,
+            "nanos": 30638801
+          },
+          {
+            "secs": 0,
+            "nanos": 50069801
+          },
+          {
+            "secs": 0,
+            "nanos": 28857701
+          },
+          {
+            "secs": 0,
+            "nanos": 36120200
+          },
+          {
+            "secs": 0,
+            "nanos": 46410401
+          },
+          {
+            "secs": 0,
+            "nanos": 33515501
+          },
+          {
+            "secs": 0,
+            "nanos": 50725801
+          },
+          {
+            "secs": 0,
+            "nanos": 46578601
+          },
+          {
+            "secs": 0,
+            "nanos": 23438001
+          },
+          {
+            "secs": 0,
+            "nanos": 40276501
+          },
+          {
+            "secs": 0,
+            "nanos": 40672201
+          },
+          {
+            "secs": 0,
+            "nanos": 39100800
+          },
+          {
+            "secs": 0,
+            "nanos": 39943301
+          },
+          {
+            "secs": 0,
+            "nanos": 38982601
+          },
+          {
+            "secs": 0,
+            "nanos": 38790201
+          },
+          {
+            "secs": 0,
+            "nanos": 49314601
+          },
+          {
+            "secs": 0,
+            "nanos": 92850602
+          },
+          {
+            "secs": 0,
+            "nanos": 43690901
+          },
+          {
+            "secs": 0,
+            "nanos": 42129401
+          },
+          {
+            "secs": 0,
+            "nanos": 43880601
+          },
+          {
+            "secs": 0,
+            "nanos": 61096101
+          },
+          {
+            "secs": 0,
+            "nanos": 19998201
+          },
+          {
+            "secs": 0,
+            "nanos": 80994301
+          },
+          {
+            "secs": 0,
+            "nanos": 37677601
+          },
+          {
+            "secs": 0,
+            "nanos": 41923601
+          },
+          {
+            "secs": 0,
+            "nanos": 43696201
+          },
+          {
+            "secs": 0,
+            "nanos": 27866800
+          },
+          {
+            "secs": 0,
+            "nanos": 51318101
+          },
+          {
+            "secs": 0,
+            "nanos": 49477401
+          },
+          {
+            "secs": 0,
+            "nanos": 51180701
+          },
+          {
+            "secs": 0,
+            "nanos": 41329701
+          },
+          {
+            "secs": 0,
+            "nanos": 40832001
+          },
+          {
+            "secs": 0,
+            "nanos": 40578701
+          },
+          {
+            "secs": 0,
+            "nanos": 35570501
+          },
+          {
+            "secs": 0,
+            "nanos": 55196201
+          },
+          {
+            "secs": 0,
+            "nanos": 31086901
+          },
+          {
+            "secs": 0,
+            "nanos": 50403901
+          },
+          {
+            "secs": 0,
+            "nanos": 41778301
+          },
+          {
+            "secs": 0,
+            "nanos": 29718901
+          },
+          {
+            "secs": 0,
+            "nanos": 50360601
+          },
+          {
+            "secs": 0,
+            "nanos": 31865100
+          },
+          {
+            "secs": 0,
+            "nanos": 44626101
+          },
+          {
+            "secs": 0,
+            "nanos": 35152401
+          },
+          {
+            "secs": 0,
+            "nanos": 31662201
+          },
+          {
+            "secs": 0,
+            "nanos": 70176601
+          },
+          {
+            "secs": 0,
+            "nanos": 20335001
+          },
+          {
+            "secs": 0,
+            "nanos": 25934600
+          },
+          {
+            "secs": 0,
+            "nanos": 87997202
+          },
+          {
+            "secs": 0,
+            "nanos": 48742901
+          },
+          {
+            "secs": 0,
+            "nanos": 40368101
+          },
+          {
+            "secs": 0,
+            "nanos": 42525501
+          },
+          {
+            "secs": 0,
+            "nanos": 38850901
+          },
+          {
+            "secs": 0,
+            "nanos": 96464202
+          },
+          {
+            "secs": 0,
+            "nanos": 39181101
+          },
+          {
+            "secs": 0,
+            "nanos": 44911101
+          },
+          {
+            "secs": 0,
+            "nanos": 56850901
+          },
+          {
+            "secs": 0,
+            "nanos": 36034201
+          },
+          {
+            "secs": 0,
+            "nanos": 52108401
+          },
+          {
+            "secs": 0,
+            "nanos": 18892801
+          },
+          {
+            "secs": 0,
+            "nanos": 40254300
+          },
+          {
+            "secs": 0,
+            "nanos": 40202001
+          },
+          {
+            "secs": 0,
+            "nanos": 61150902
+          },
+          {
+            "secs": 0,
+            "nanos": 182174604
+          },
+          {
+            "secs": 0,
+            "nanos": 77400
+          },
+          {
+            "secs": 0,
+            "nanos": 15900
+          },
+          {
+            "secs": 0,
+            "nanos": 65800
+          }
+        ],
+        "user_prompt_length": 209,
+        "response_size": 825,
+        "chat_conversation_type": "NotToolUse",
+        "tool_use_ids_and_names": [],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    }
+  ],
+  "valid_history_range": [
+    0,
+    1
+  ],
+  "transcript": [
+    "> kiro-cki chat --resume",
+    "I see you're resuming a chat session. Based on the context provided, you're working on an **AI Agent Serverless Kit** for HR using Amazon Bedrock, RAG, and AWS services.\n\n**Current Project Status:**\n\nYour POC is validated and ready for production, but you're currently blocked by Bedrock quota issues:\n- **Problem:** HTTP 429 throttling - quotas at 0.0 (no Bedrock access enabled)\n- **Action Taken:** AWS Support ticket opened on 16/02/2026 ✅\n- **Waiting:** 24-48h for quota approval\n\n**What's Built:**\n- Knowledge Base: `PoliticasRH-KnowledgeBase` (HR policies)\n- Agent: `agent-rh-chatbot` (Amazon Nova Micro 1.0)\n- S3 bucket with HR documents (benefícios, código de conduta, férias)\n- Embeddings: Amazon Titan v2.0\n- Vector DB: S3 Vectors\n\n**Next Steps (after quota approval):**\n1. Sync Knowledge Base\n2. Test HR Agent\n3. Implement Multi-Agent architecture\n\n**Estimated Costs:** ~$0.21/month (POC) to ~$11.54/month (10K interactions)\n\nHow can I help you today? Are you checking on the quota status, want to prepare for testing after approval, or work on something else in the project?\n[Tool uses: none]",
+    "> todas as respostas em portugues brasil por favor",
+    "Entendido! Todas as minhas respostas serão em português brasileiro a partir de agora.\n\n**Resumo do Status do Projeto:**\n\nVocê está trabalhando no **AI Agent Serverless Kit** para RH usando Amazon Bedrock e RAG.\n\n**Situação Atual:**\n- ✅ POC validada e pronta para produção\n- 🔴 Bloqueado por quotas do Bedrock (HTTP 429)\n- ✅ Ticket AWS Support aberto em 16/02/2026\n- ⏳ Aguardando aprovação (24-48h)\n\n**O que já está pronto:**\n- Knowledge Base: `PoliticasRH-KnowledgeBase`\n- Agent: `agent-rh-chatbot` (Amazon Nova Micro 1.0)\n- Documentos RH no S3\n- Embeddings: Amazon Titan v2.0\n\n**Custos estimados:** ~$0,21/mês (POC) até ~$11,54/mês (10K interações)\n\nComo posso te ajudar hoje? Quer verificar o status das quotas, preparar os testes para depois da aprovação, ou trabalhar em outra parte do projeto?\n[Tool uses: none]",
+    "> /chat save AI"
+  ],
+  "tools": {
+    "native___": [
+      {
+        "ToolSpecification": {
+          "name": "fs_read",
+          "description": "Tool for reading files, directories and images. Always provide an 'operations' array.\n\nFor single operation: provide array with one element.\nFor batch operations: provide array with multiple elements.\n\nAvailable modes:\n- Line: Read lines from a file\n- Directory: List directory contents\n- Search: Search for patterns in files\n- Image: Read and process images\n\nExamples:\n1. Single: {\"operations\": [{\"mode\": \"Line\", \"path\": \"/file.txt\"}]}\n2. Batch: {\"operations\": [{\"mode\": \"Line\", \"path\": \"/file1.txt\"}, {\"mode\": \"Search\", \"path\": \"/file2.txt\", \"pattern\": \"test\"}]}",
+          "input_schema": {
+            "json": {
+              "required": [
+                "operations"
+              ],
+              "type": "object",
+              "properties": {
+                "operations": {
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "end_line": {
+                        "description": "Ending line number (optional, for Line mode). A negative index represents a line number starting from the end of the file.",
+                        "type": "integer",
+                        "default": -1
+                      },
+                      "pattern": {
+                        "type": "string",
+                        "description": "Pattern to search for (required, for Search mode). Case insensitive. The pattern matching is performed per line."
+                      },
+                      "max_entries": {
+                        "description": "Maximum number of entries to return (optional, for Directory mode). When limit is reached, results are truncated and metadata shows 'showing X of Y entries'. Use to prevent context window overflow. Default: 1000",
+                        "default": 1000,
+                        "type": "integer"
+                      },
+                      "exclude_patterns": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "description": "Glob patterns to exclude from directory listing (optional, for Directory mode). If omitted, uses defaults. If empty array [] is provided, no exclusions are applied (shows everything). If patterns are provided, they completely override the defaults. Examples: '**/target/**', '*.log'",
+                        "default": [
+                          "node_modules",
+                          ".git",
+                          "dist",
+                          "build",
+                          "out",
+                          ".cache",
+                          "target"
+                        ]
+                      },
+                      "mode": {
+                        "type": "string",
+                        "enum": [
+                          "Line",
+                          "Directory",
+                          "Search",
+                          "Image"
+                        ],
+                        "description": "The operation mode to run in: `Line`, `Directory`, `Search`. `Line` and `Search` are only for text files, and `Directory` is only for directories. `Image` is for image files, in this mode `image_paths` is required."
+                      },
+                      "path": {
+                        "description": "Path to the file or directory. The path should be absolute, or otherwise start with ~ for the user's home (required for Line, Directory, Search modes).",
+                        "type": "string"
+                      },
+                      "depth": {
+                        "default": 0,
+                        "type": "integer",
+                        "description": "Depth of a recursive directory listing (optional, for Directory mode)"
+                      },
+                      "start_line": {
+                        "type": "integer",
+                        "description": "Starting line number (optional, for Line mode). A negative index represents a line number starting from the end of the file.",
+                        "default": 1
+                      },
+                      "context_lines": {
+                        "default": 2,
+                        "type": "integer",
+                        "description": "Number of context lines around search results (optional, for Search mode)"
+                      },
+                      "image_paths": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "List of paths to the images. This is currently supported by the Image mode."
+                      },
+                      "offset": {
+                        "description": "Number of entries to skip for pagination (optional, for Directory mode). Use with max_entries to iterate through large directories. Entries are sorted by last modified time (most recent first). Default: 0",
+                        "type": "integer",
+                        "default": 0
+                      }
+                    },
+                    "required": [
+                      "mode"
+                    ]
+                  },
+                  "type": "array",
+                  "minItems": 1,
+                  "description": "Array of operations to execute. Provide one element for single operation, multiple for batch."
+                },
+                "summary": {
+                  "description": "Optional description of the purpose of this batch operation (mainly useful for multiple operations)",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "web_search",
+          "description": "WebSearch looks up information that is outside the model's training data or cannot be reliably inferred from the current codebase/context.\nTool performs basic compliance wrt content licensing and restriction.\nAs an agent you are responsible for adhering to compliance and attribution requirements.\nIMPORTANT: The snippets often contain enough information to answer questions - only use web_fetch if you need more detailed content from a specific webpage.\n\n## When to Use\n- When the user asks for current or up-to-date information (e.g., pricing, versions, technical specs) or explicitly requests a web search.\n- When verifying information that may have changed recently, or when the user provides a specific URL to inspect.\n\n## When NOT to Use\n- When the question involves basic concepts, historical facts, or well-established programming syntax/technical documentation.\n- When the topic does not require current or evolving information.\n\nFor any code-related tasks, follow this order:\n1. Search within the repository (if tools are available) and check if it can be inferred from existing code or documentation.\n2. Use this tool only if still unresolved and the library/data is likely new/unseen.\n\n## Content Compliance Requirements\nYou MUST adhere to strict licensing restrictions and attribution requirements when using search results:\n\n### Attribution Requirements\n- ALWAYS provide inline links to original sources using format: [description](url)\n- If not possible to provide inline link, add sources at the end of file\n- Ensure attribution is visible and accessible\n\n### Verbatim Reproduction Limits\n- NEVER reproduce more than 30 consecutive words from any single source\n- Track word count per source to ensure compliance\n- Always paraphrase and summarize rather than quote directly\n- Add compliance note when the content from the source is rephrased: \"Content was rephrased for compliance with licensing restrictions\"\n\n### Content Modification Guidelines\n- You MAY paraphrase, summarize, and reformat content\n- You MUST NOT materially change the underlying substance or meaning\n- Preserve factual accuracy while condensing information\n- Avoid altering core arguments, data, or conclusions\n\n## Usage Details\n- You may rephrase user queries to improve search effectiveness\n- You can make multiple queries to gather comprehensive information\n- Consider breaking complex questions into focused searches\n- Refine queries based on initial results if needed\n\n## Output Usage\n- Prioritize latest published sources based on publishedDate\n- Prefer official documentation to blogs and news posts\n- Use domain information to assess source authority and reliability\n\n## Error Handling\n- If unable to comply with content restrictions, explain limitations to user\n- Suggest alternative approaches when content cannot be reproduced\n- Prioritize compliance over completeness when conflicts arise\n\n## Output\nThe tool returns a JSON object with a \"results\" array containing search results:\n\n{\n  \"results\": [\n    {\n      \"title\": \"Example Page Title\",\n      \"url\": \"https://example.com/page\",\n      \"snippet\": \"Brief excerpt from the page...\",\n      \"publishedDate\": \"2025-11-20T10:30:00Z\",\n      \"domain\": \"example.com\",\n      \"id\": \"unique-id-123\",\n      \"maxVerbatimWordLimit\": 30,\n      \"publicDomain\": false\n    }\n  ]\n}\n\n## UI FROM LLM (You) back to the user\nCRITICAL: Always start your response with \"Here's what I found:\" and then start from a newline.\nALWAYS end your response with a blank line followed by 'References:' and list the sources you used in sequential order [1], [2], [3], etc. with NO gaps in numbering. Format: '[N] Title - URL' one per line. Truncate long titles to 80 characters and long URLs to 100 characters, adding '...' if truncated.",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "description": "Search query - can be keywords, questions, or specific topics"
+                }
+              },
+              "required": [
+                "query"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "glob",
+          "description": "Find files and directories whose paths match a glob pattern. Respects .gitignore. Prefer this over the bash 'find' command for listing or discovering paths. Returns JSON with totalFiles (count found), truncated (true if limited), and filePaths array. When truncated is true, just mention results are truncated, don't state the limit number.",
+          "input_schema": {
+            "json": {
+              "required": [
+                "pattern"
+              ],
+              "type": "object",
+              "properties": {
+                "limit": {
+                  "description": "Maximum files to return. If totalFiles exceeds this, truncated will be true.",
+                  "type": "integer"
+                },
+                "path": {
+                  "type": "string",
+                  "description": "Root directory to search from. Only set this when the user explicitly mentions a directory path. In all other cases, omit this so the tool searches from the current working directory (the project root)."
+                },
+                "pattern": {
+                  "type": "string",
+                  "description": "Glob pattern, e.g. \"**/*.rs\", \"src/**/*.{ts,tsx}\" or \"**/test*\"."
+                },
+                "max_depth": {
+                  "description": "Maximum directory depth to traverse. Increase for deep nested structures.",
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "fs_write",
+          "description": "A tool for creating and editing files\n * The `create` command will override the file at `path` if it already exists as a file, and otherwise create a new file\n * The `append` command will add content to the end of an existing file, automatically adding a newline if the file doesn't end with one. The file must exist.\n Notes for using the `str_replace` command:\n * The `old_str` parameter should match EXACTLY one or more consecutive lines from the original file. Be mindful of whitespaces!\n * If the `old_str` parameter is not unique in the file, the replacement will not be performed. Make sure to include enough context in `old_str` to make it unique\n * The `new_str` parameter should contain the edited lines that should replace the `old_str`.",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "insert_line": {
+                  "description": "Required parameter of `insert` command. The `new_str` will be inserted AFTER the line `insert_line` of `path`.",
+                  "type": "integer"
+                },
+                "new_str": {
+                  "type": "string",
+                  "description": "Required parameter of `str_replace` command containing the new string. Required parameter of `insert` command containing the string to insert. Required parameter of `append` command containing the content to append to the file."
+                },
+                "command": {
+                  "type": "string",
+                  "enum": [
+                    "create",
+                    "str_replace",
+                    "insert",
+                    "append"
+                  ],
+                  "description": "The commands to run. Allowed options are: `create`, `str_replace`, `insert`, `append`."
+                },
+                "file_text": {
+                  "type": "string",
+                  "description": "Required parameter of `create` command, with the content of the file to be created."
+                },
+                "old_str": {
+                  "type": "string",
+                  "description": "Required parameter of `str_replace` command containing the string in `path` to replace."
+                },
+                "path": {
+                  "description": "Absolute path to file or directory, e.g. `/repo/file.py` or `/repo`.",
+                  "type": "string"
+                },
+                "summary": {
+                  "description": "A brief explanation of what the file change does or why it's being made.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "command",
+                "path"
+              ],
+              "type": "object"
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "use_aws",
+          "description": "Make an AWS CLI api call with the specified service, operation, and parameters. All arguments MUST conform to the AWS CLI specification. Should the output of the invocation indicate a malformed command, invoke help to obtain the the correct command.",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "required": [
+                "region",
+                "service_name",
+                "operation_name",
+                "label"
+              ],
+              "properties": {
+                "region": {
+                  "description": "Region name for calling the operation on AWS.",
+                  "type": "string"
+                },
+                "label": {
+                  "description": "Human readable description of the api that is being called.",
+                  "type": "string"
+                },
+                "service_name": {
+                  "type": "string",
+                  "pattern": "^[^-].*",
+                  "description": "The name of the AWS service. If you want to query s3, you should use s3api if possible. Must not start with a dash (-)."
+                },
+                "positional_args": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Positional arguments for high-level commands (e.g., s3 cp, s3 mv, s3 sync, s3 rm). These are passed directly without -- prefix. Use this for source/destination paths in S3 commands."
+                },
+                "parameters": {
+                  "type": "object",
+                  "description": "The parameters for the operation. The parameter keys MUST conform to the AWS CLI specification. You should prefer to use JSON Syntax over shorthand syntax wherever possible. For parameters that are booleans, prioritize using flags with no value. Denote these flags with flag names as key and an empty string as their value. You should also prefer kebab case."
+                },
+                "profile_name": {
+                  "type": "string",
+                  "description": "Optional: AWS profile name to use from ~/.aws/credentials. Defaults to default profile if not specified."
+                },
+                "operation_name": {
+                  "type": "string",
+                  "description": "The name of the operation to perform."
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "grep",
+          "description": "Fast text pattern search in files using regex. ALWAYS use this tool instead of 'grep', 'rg', or 'ag' commands in bash. Respects .gitignore.\n\n## Text Discovery Only\nUse grep for literal text/pattern matching: error messages, TODOs, config values, regex patterns.\n\n## For Semantic Code Understanding → Use 'code' tool if available\n- Finding symbol definitions or usages → code tool (search_symbols, goto_definition, find_references)\n- Understanding code structure/relationships → code tool\n- Distinguishing definition vs call vs import → code tool\n\n## Fallback\nIf the 'code' tool is available but returns insufficient symbol info, use grep to discover candidate files/lines, then return to 'code' for precise navigation.\n\nWhen you use this tool, prefer to show the user a small list of representative matches (including file paths and line numbers) instead of only giving a high-level summary.",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "properties": {
+                "case_sensitive": {
+                  "type": "boolean",
+                  "description": "Case-sensitive search. Defaults to false (case-insensitive)."
+                },
+                "max_total_lines": {
+                  "type": "integer",
+                  "description": "Max total matched lines returned across all files (output limit). Increase when searching for many occurrences."
+                },
+                "pattern": {
+                  "description": "Regex pattern to search for. Examples: \"fn main\", \"class.*Component\", \"TODO|FIXME\". Start with simple patterns first (e.g. just the word you're looking for), then refine if needed.",
+                  "type": "string"
+                },
+                "include": {
+                  "type": "string",
+                  "description": "File filter glob. Examples: \"*.rs\", \"*.{ts,tsx}\", \"*.py\""
+                },
+                "output_mode": {
+                  "description": "Output format: 'content' returns matches as 'file:line:content' (default, best for seeing actual matches), 'files_with_matches' returns only file paths, 'count' returns match counts per file.",
+                  "type": "string",
+                  "enum": [
+                    "content",
+                    "files_with_matches",
+                    "count"
+                  ]
+                },
+                "max_matches_per_file": {
+                  "description": "Max matches returned per file (output limit). Increase to see all occurrences in a file.",
+                  "type": "integer"
+                },
+                "path": {
+                  "type": "string",
+                  "description": "Directory to search from. Defaults to current working directory."
+                },
+                "max_files": {
+                  "type": "integer",
+                  "description": "Max number of files returned (output limit). Increase for comprehensive codebase searches."
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Max directory depth to traverse when searching (search limit). Increase for deeply nested structures."
+                }
+              },
+              "required": [
+                "pattern"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "execute_bash",
+          "description": "Execute the specified bash command.",
+          "input_schema": {
+            "json": {
+              "required": [
+                "command"
+              ],
+              "type": "object",
+              "properties": {
+                "summary": {
+                  "description": "A brief explanation of what the command does",
+                  "type": "string"
+                },
+                "command": {
+                  "description": "Bash command to execute",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "use_subagent",
+          "description": "⚠️ CRITICAL DELEGATION TOOL ⚠️\n\n🔍 BEFORE attempting ANY task, CHECK if you have the required tools in YOUR current tool list.\n\n❌ If you DON'T have the necessary tools → YOU MUST use this tool to delegate to a subagent that does.\n✅ If you DO have the tools → Handle the task yourself.\n\n## When to Use (MANDATORY scenarios):\n\n1. **MISSING TOOLS**: The user asks you to do something but you don't see the required tool in your available tools list\n   - Example: User asks to read a file, but you don't have 'fs_read' → USE THIS TOOL\n   - Example: User asks to search code, but you don't have 'code' tool → USE THIS TOOL\n   - Example: User asks to run bash command, but you don't have 'execute_bash' → USE THIS TOOL\n\n2. **PARALLEL PROCESSING**: A complex task can be split into independent subtasks that different specialized agents can handle simultaneously\n\n3. **CAPABILITY CHECK**: Use ListAgents command first to see what specialized agents and their toolsets are available\n\n## How Subagents Are Different:\n- Subagents have DIFFERENT, SPECIALIZED toolsets than you\n- Each subagent may have tools you don't have access to\n- They operate independently with their own context\n- Up to 4 subagents can work in parallel\n\n## Decision Flow:\n```\nUser makes request → Check YOUR tools list → Missing required tool? → USE use_subagent\n                                          → Have required tool? → Handle it yourself\n```\n\n⚡ Remember: Don't apologize about lacking tools - just delegate to a subagent that has them! Also note that subagents that are spawned together could not communicate with each other. If they are to perform tasks that are dependent on each other. Spawn them with a different tool call!",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "command": {
+                  "enum": [
+                    "ListAgents",
+                    "InvokeSubagents"
+                  ],
+                  "description": "The commands to run. Allowed options are `ListAgents` to query available agents, or `InvokeSubagents` to invoke one or more subagents",
+                  "type": "string"
+                },
+                "content": {
+                  "description": "Required for `InvokeSubagents` command. Contains subagents array and optional conversation ID.",
+                  "properties": {
+                    "subagents": {
+                      "type": "array",
+                      "items": {
+                        "properties": {
+                          "query": {
+                            "description": "The query or task to be handled by the subagent",
+                            "type": "string"
+                          },
+                          "relevant_context": {
+                            "type": "string",
+                            "description": "Optional additional context that should be provided to the subagent to help it understand the task better"
+                          },
+                          "agent_name": {
+                            "type": "string",
+                            "description": "Optional name of the specific agent to use. If not provided, uses the default agent"
+                          }
+                        },
+                        "type": "object",
+                        "required": [
+                          "query"
+                        ]
+                      },
+                      "description": "Array of subagent invocations to execute in parallel. Each invocation specifies a query, optional agent name, and optional context."
+                    }
+                  },
+                  "required": [
+                    "subagents"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "command"
+              ],
+              "type": "object"
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "dummy",
+          "description": "This is a dummy tool. If you are seeing this that means the tool associated with this tool call is not in the list of available tools. This could be because a wrong tool name was supplied or the list of tools has changed since the conversation has started. Do not show this when user asks you to list tools.",
+          "input_schema": {
+            "json": {
+              "properties": {},
+              "type": "object",
+              "required": []
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "report_issue",
+          "description": "Opens the browser to a pre-filled gh (GitHub) issue template to report chat issues, bugs, or feature requests. Pre-filled information includes the conversation transcript, chat context, and chat request IDs from the service.",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "actual_behavior": {
+                  "type": "string",
+                  "description": "Optional: The actual chat behavior that happened and demonstrates the issue or lack of a feature."
+                },
+                "title": {
+                  "type": "string",
+                  "description": "The title of the GitHub issue."
+                },
+                "steps_to_reproduce": {
+                  "description": "Optional: Previous user chat requests or steps that were taken that may have resulted in the issue or error response.",
+                  "type": "string"
+                },
+                "expected_behavior": {
+                  "type": "string",
+                  "description": "Optional: The expected chat behavior or action that did not happen."
+                }
+              },
+              "type": "object",
+              "required": [
+                "title"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "code",
+          "description": "Code intelligence to analyze code with AST parsing and fuzzy search. Language auto-detected from file extension.\n\nIMPORTANT: Prefer this tool over fs_read for code files. This tool intelligently provides structured code analysis.\n\nCORE FEATURES:\n• Fuzzy search for symbols (classes, functions, methods)\n• Extracts function/class signatures via AST\n• Structural AST search and rewrite (ast-grep)\n• Codebase overview and directory exploration\n\nNOTE: Use fs_read with line ranges for unsupported patterns.\n\n## Operations\n\n**search_symbols** - Find symbol definitions by name across workspace.\nParams: symbol_name (required), path, symbol_type, limit, language, exact_match\nUses fuzzy matching by default. Set exact_match=true for precise matching.\n\n**lookup_symbols** - Batch lookup specific symbols (max 10).\nParams: symbols (required), file_path, include_source\nSet include_source=false for large classes/structs to avoid context overflow.\nScoped lookup: Provide file_path to search within specific file only.\n\n**get_document_symbols** - List all symbols in a file.\nParams: file_path (required), top_level_only (recommended: true)\nUse this for understanding file structure without reading content.\nPrefer this over fs_read when you need symbol information.\n\n**pattern_search** - AST-based structural search using ast-grep.\nParams: pattern, language (required), file_path, limit\n\n**pattern_rewrite** - AST-based code transformation.\nParams: pattern, replacement, language (required), file_path, limit, dry_run\nUse dry_run=true first to preview changes.\n\n## Pattern Search & Rewrite\n\nMetavariables:\n• $VAR - Matches single node (identifier, expression)\n• $$$ - Matches zero or more nodes (statements, parameters)\n\nSimple patterns:\n• console.log($ARG) - Match any console.log call\n• function $NAME($$$PARAMS) {} - Match function declaration\n• $OBJ.$METHOD() - Match any method call\n\nStructural rules (YAML):\n• pattern - Match code structure\n• kind - Match AST node type (function_declaration, class_declaration)\n• has - Node contains descendant matching pattern\n• inside - Node is inside ancestor matching pattern\n• all/any/not - Logical operators\n\nCritical: For relational rules (has, inside), always use stopBy: end\n\nRewrite examples:\n• pattern='var $N = $V', replacement='const $N = $V'\n• pattern='$O.hasOwnProperty($P)', replacement='Object.hasOwn($O, $P)'\n\nWorkflow:\n1. Use pattern_search first to verify matches\n2. Review matches to ensure correctness\n3. Test rewrite on small subset\n4. Apply to full codebase after verification\n\n**generate_codebase_overview** - ONLY for explicit architecture questions. Not for bug fixes or finding code.\nParams: path (optional)\n\n**search_codebase_map** - Focused directory exploration.\nParams: file_path, path\n\n## Explore Unfamiliar Code\n1. search_symbols for domain-specific types/functions/methods/classes\n2. lookup_symbols with include_source=true on promising matches\n3. grep (max 2 searches) for literal text patterns\n4. Repeat 1-3 with refined terms if needed\n5. generate_codebase_overview ONLY for architecture review or full codebase understanding\n   - NOT for bug fixes, feature work, or finding specific code\n\n## Tool Selection Priority\n1. search_symbols or lookup_symbols for finding code - ALWAYS use for functions/methods/classes/structs/interfaces\n2. get_document_symbols for file structure\n3. grep - ONLY for literal text in comments/strings, config values, code\n4. fs_read - raw file content when needed\n\n## CRITICAL RULES\n- Start with search_symbols\n- Always follow search_symbols with lookup_symbols\n- When searching for multiple related symbols, call search_symbols in parallel\n\n## Quick Reference\n• \"What's in this file?\" → get_document_symbols\n• \"Show me X class\" → search_symbols, then lookup_symbol\n\n## LSP Operations (Not Available)\nThese require LSP initialization (/code init):\nfind_references, goto_definition, get_hover, get_completions, get_diagnostics, rename_symbol",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "limit": {
+                  "type": "integer",
+                  "description": "Maximum results (optional for search_symbols/pattern_search)"
+                },
+                "path": {
+                  "description": "Directory path (optional, for generate_codebase_overview: workspace root, for search_codebase_map: path filter, for search_symbols: scope search to file or directory)",
+                  "type": "string"
+                },
+                "pattern": {
+                  "description": "AST pattern (required for pattern_search)",
+                  "type": "string"
+                },
+                "language": {
+                  "description": "Programming language (required for pattern_search, optional for search_symbols)",
+                  "type": "string"
+                },
+                "symbol_name": {
+                  "description": "Simple symbol name, not qualified (e.g. 'myFunction' not 'MyClass.myFunction'). Required for search_symbols",
+                  "type": "string"
+                },
+                "file_path": {
+                  "type": "string",
+                  "description": "File path (required for get_document_symbols, optional for pattern_search/search_codebase_map)"
+                },
+                "operation": {
+                  "enum": [
+                    "search_symbols",
+                    "lookup_symbols",
+                    "get_document_symbols",
+                    "pattern_search",
+                    "generate_codebase_overview",
+                    "search_codebase_map",
+                    "pattern_rewrite"
+                  ],
+                  "description": "The code intelligence operation to perform",
+                  "type": "string"
+                },
+                "symbols": {
+                  "description": "List of simple symbol names, not qualified (e.g. ['myFunction'] not ['MyClass.myFunction']). Required for lookup_symbols, max 10",
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "include_source": {
+                  "description": "Include source code in results (optional for lookup_symbols)",
+                  "type": "boolean"
+                }
+              },
+              "type": "object",
+              "required": [
+                "operation"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "introspect",
+          "description": "Use ONLY when the user is asking about this chat application's own features, slash commands, settings, or capabilities. Do NOT use for general coding questions, AWS help, or tasks the user wants you to perform. When mentioning commands in your response, always prefix them with '/' (e.g., '/save', '/load', '/context'). CRITICAL: Only provide information explicitly documented. If details about any tool, feature, or command are not documented, clearly state the information is not available rather than generating assumptions.",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "query": {
+                  "type": "string",
+                  "description": "The user's question about this assistant's usage, features, or capabilities"
+                },
+                "doc_path": {
+                  "description": "Path to a specific doc to retrieve (e.g., \"features/tangent-mode.md\"). Use this to get full content of a doc from the index.",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "web_fetch",
+          "description": "Fetch and extract content from a specific URL. Supports three modes: 'selective' (default, extracts relevant sections around search terms), 'truncated' (first 8000 chars), 'full' (complete content). Use 'selective' mode to read specific parts of a page multiple times without filling context. Provide 'search_terms' in selective mode to find relevant sections (e.g., 'pricing', 'installation').",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "required": [
+                "url"
+              ],
+              "properties": {
+                "url": {
+                  "description": "URL to fetch content from",
+                  "type": "string"
+                },
+                "mode": {
+                  "type": "string",
+                  "description": "Extraction mode: 'selective' for smart extraction (default), 'truncated' for first 8000 chars, 'full' for complete content",
+                  "enum": [
+                    "selective",
+                    "truncated",
+                    "full"
+                  ]
+                },
+                "search_terms": {
+                  "description": "Optional: Keywords to find in selective mode (e.g., 'pricing cost', 'installation setup'). Returns ~10 lines before and after matches. If not provided, returns beginning of page.",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "context_manager": {
+    "max_context_files_size": 150000,
+    "current_profile": "kiro_default",
+    "paths": [
+      "AmazonQ.md",
+      "AGENTS.md",
+      "README.md"
+    ],
+    "hooks": {}
+  },
+  "context_message_length": 13587,
+  "latest_summary": null,
+  "model_info": {
+    "model_name": "auto",
+    "description": "Models chosen by task for optimal usage and consistent quality",
+    "model_id": "auto",
+    "context_window_tokens": 200000,
+    "rate_multiplier": 1.0,
+    "rate_unit": "Credit"
+  },
+  "file_line_tracker": {},
+  "checkpoint_manager": {
+    "shadow_repo_path": "/home/bruno/.local/share/kiro-cli/cli-checkouts/297e71e8-1a76-4964-b30b-ae44c95d9c97",
+    "work_tree_path": "/home/bruno/AI",
+    "checkpoints": [
+      {
+        "tag": "0",
+        "timestamp": "2026-02-18T23:16:12.948517968-03:00",
+        "description": "Initial state",
+        "history_snapshot": [],
+        "is_turn": true,
+        "tool_name": null
+      }
+    ],
+    "tag_index": {
+      "0": 0
+    },
+    "current_turn": 0,
+    "tools_in_turn": 0,
+    "pending_user_message": null,
+    "message_locked": false,
+    "file_stats_cache": {}
+  },
+  "mcp_enabled": true,
+  "mcp_last_checked": [
+    2026,
+    50,
+    2,
+    16,
+    12,
+    9664247,
+    0,
+    0,
+    0
+  ],
+  "mcp_server_versions": {},
+  "mcp_disabled_due_to_api_failure": false,
+  "user_turn_metadata": {
+    "continuation_id": "472d21da-47e7-42b7-a014-1fac3a3358bd",
+    "requests": [],
+    "usage_info": []
+  }
+}
