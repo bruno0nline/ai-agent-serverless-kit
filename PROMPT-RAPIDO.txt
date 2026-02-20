@@ -1,0 +1,47 @@
+Olá! Estou trabalhando no projeto AI Agent Serverless Kit - uma solução Multi-Agent usando AWS Bedrock.
+
+Por favor, leia os seguintes arquivos para entender o contexto do projeto:
+
+1. README.md - Visão geral e status atual
+2. GUIA-REPLICACAO.md - Documentação completa de implementação
+3. DOCUMENTACAO-INDICE.md - Índice de toda documentação
+4. Documentação/agents-maestriacloud.md - Configuração dos agents
+5. Documentação/CUSTOS.md - Análise de custos
+
+RESUMO DO PROJETO:
+- Empresa: Maestriacloud (Minas Gerais, Brasil)
+- Objetivo: Sistema de atendimento automatizado com IA
+- Arquitetura: Multi-Agent (1 Supervisor + 2 Collaborators)
+- Status: Multi-Agent Collaboration concluído (20/02/2026)
+- Próximo: Bedrock Flows (Módulo 63)
+
+RECURSOS AWS CRIADOS:
+- 3 Agents: supervisor (Patrícia), especialista-rh (Carla), especialista-produtos (Rafael)
+- 3 Knowledge Bases: RH, Cursos, AWS
+- 1 Lambda Function: Consulta_Feriados
+- S3 Bucket: maestriatec-rag-knowledge-base
+- Região: us-east-1
+- Profile AWS: Master
+
+ESTRUTURA DO PROJETO:
+- /tests/ - Scripts Python de teste e monitoramento
+- /Documentação/ - Toda documentação técnica
+- /RAG-Knowledge-Base/ - Documentos das Knowledge Bases
+- /Lambda/ - Funções Lambda
+- /PythonAwsBedrockActionGroupDemo/ - Action Group de feriados
+
+ONDE BUSCAR INFORMAÇÕES:
+- Implementação do zero: GUIA-REPLICACAO.md
+- Problemas de quotas: Documentação/Bedrock/RESUMO-EXECUTIVO.md
+- Custos e ROI: Documentação/CUSTOS.md
+- Configuração agents: Documentação/agents-maestriacloud.md
+- Scripts de teste: tests/README.md
+- Índice geral: DOCUMENTACAO-INDICE.md
+
+Estou usando:
+- Sistema: Ubuntu 24.04 (WSL no Windows)
+- Python: virtualenv em ~/venv/ia
+- AWS CLI: configurado com SSO
+- Git: repositório https://github.com/bruno0nline/ai-agent-serverless-kit.git
+
+Por favor, confirme que leu os arquivos e está pronto para me ajudar com o projeto!
