@@ -1,4 +1,4 @@
-# 🤖 AI Agent Serverless Kit
+﻿# 🤖 AI Agent Serverless Kit
 
 > Solução serverless de Agente de IA para RH usando Amazon Bedrock, RAG e tecnologias AWS nativas.
 
@@ -157,12 +157,18 @@ export REGION="us-east-1"
 - [x] Integração Lambda + Bedrock Agent
 - [x] Guardrail implementado (Filtro-de-Conteudo-Ofensivo)
 - [x] Agent RH testado e funcionando
+- [x] Multi-Agent Collaboration ✅ **Concluído 20/02/2026**
+  - Supervisor Agent: Patrícia (Amazon Nova Pro 1.0)
+  - Collaborator Agent RH: Carla (Amazon Nova Micro 1.0)
+  - Collaborator Agent Vendas: Rafael (Claude 3.5 Haiku v1)
+- [x] Knowledge Base de Cursos (PoliticasCurso-Knowledge-Base)
+- [x] Scripts de teste automatizados
+- [x] Documentação completa de custos
 
 ### 🟢 Próximos Passos
 
-- [ ] Multi-Agent Collaboration (Módulo 62)
-- [ ] Bedrock Flows (Módulo 63)
-- [ ] Finalizar fundamentos do Bedrock
+- [ ] Projetos práticos (YouTube, WhatsApp)
+- [ ] Implementação na BS4IT (empresa real)
 
 ---
 
@@ -196,54 +202,41 @@ Este documento contém:
 
 ---
 
-## 🏗️ Arquitetura da Solução (POC)
+## 🏗️ Arquitetura Multi-Agent
 
 ```
-┌─────────────┐
-│   Usuário   │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────────────────────────────┐
-│  AWS Bedrock Agent                  │
-│  (agent-rh-chatbot)                 │
-│                                     │
-│  Model: Amazon Nova Micro 1.0       │
-│  Guardrail: Filtro-de-Conteudo-     │
-│             Ofensivo                │
-└──────┬──────────────────┬───────────┘
-       │                  │
-       │                  ▼
-       │         ┌─────────────────────┐
-       │         │  Lambda Function    │
-       │         │  (Consulta_Feriados)│
-       │         │                     │
-       │         │  Layer: holidays    │
-       │         │  Runtime: Python 3.13│
-       │         └─────────────────────┘
-       │
-       ▼
-┌─────────────────────────────────────┐
-│  Knowledge Base                     │
-│  (PoliticasRH-KnowledgeBase)        │
-│                                     │
-│  - Embedding: Titan v2.0            │
-│  - Vector DB: S3 Vectors            │
-└──────┬──────────────────────────────┘
-       │
-       ▼
-┌─────────────────────────────────────┐
-│  S3 Bucket                          │
-│  s3://maestriatec-rag-knowledge-    │
-│  base/RH/                           │
-│                                     │
-│  - beneficios.md                    │
-│  - codigo-conduta.md                │
-│  - politica-ferias.md               │
-└─────────────────────────────────────┘
+                    ┌─────────────────────────────┐
+                    │        Usuário              │
+                    └──────────────┬──────────────┘
+                                   │
+                                   ▼
+                    ┌─────────────────────────────┐
+                    │  Patrícia (Supervisor)      │
+                    │  Amazon Nova Pro 1.0        │
+                    └──────────┬──────────────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │                             │
+        ┌───────▼────────┐           ┌───────▼────────┐
+        │  Carla (RH)    │           │ Rafael (Vendas)│
+        │  Nova Micro    │           │ Claude Haiku   │
+        └───────┬────────┘           └───────┬────────┘
+                │                            │
+                ▼                            ▼
+        ┌───────────────┐           ┌────────────────┐
+        │ KB-RH         │           │ KB-Cursos      │
+        │ (A4Q25RNG54)  │           │ - 13 cursos    │
+        └───────┬───────┘           └────────┬───────┘
+                │                            │
+                ▼                            ▼
+        ┌───────────────────────────────────────────┐
+        │  S3: maestriatec-rag-knowledge-base      │
+        │  Vector DB: Amazon S3 Vectors             │
+        └───────────────────────────────────────────┘
 ```
 
----
+Ver documentação completa: [`Documentação/agents-maestriacloud.md`](Documentação/agents-maestriacloud.md)
+
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -400,3 +393,5 @@ Seguir instruções em: [`Documentação/Bedrock/RESUMO-EXECUTIVO.md`](Documenta
 
 **Última atualização:** 19/02/2026  
 **Versão:** 1.1 - Agent RH com Lambda Action Group e Guardrail funcionando
+
+

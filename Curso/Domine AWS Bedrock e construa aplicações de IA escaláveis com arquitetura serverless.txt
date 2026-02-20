@@ -1,0 +1,101 @@
+Descrição
+Sobre o Curso
+
+Domine a criação de aplicações de Inteligência Artificial Generativa utilizando a arquitetura serverless da AWS. Este curso oferece uma abordagem prática e completa, focando no AWS Bedrock e sua integração com outros serviços da AWS para construir soluções escaláveis e eficientes.
+
+O que você vai aprender
+
+Fundamentos Teóricos
+
+Conceitos essenciais de IA Generativa
+
+Arquitetura serverless na AWS
+
+AWS Bedrock: recursos e capacidades
+
+Integração entre serviços AWS
+
+Melhores práticas de desenvolvimento
+
+Projeto Prático
+
+Identificação do problema: Definição de um caso de uso real
+
+Arquitetura da solução: Design de sistema serverless
+
+Implementação: Desenvolvimento hands-on
+
+Integração: Conectando Bedrock com outros serviços AWS
+
+Deploy e monitoramento: Colocando em produção
+
+Tecnologias Abordadas
+
+AWS Bedrock - Serviço principal de IA Generativa
+
+Amazon S3 - Armazenamento de dados
+
+Boto3 - SDK Python para AWS
+
+Metodologia
+
+Teoria Primeiro: Conceitos fundamentais antes da prática
+
+Problema Real: Criação de um cenário desafiador
+
+Solução Iterativa: Desenvolvimento passo a passo
+
+Discussão Natural: Abordagem de desafios conforme surgem
+
+Boas Práticas: Implementação seguindo padrões da indústria
+
+Para quem é este curso
+
+Desenvolvedores interessados em IA Generativa
+
+Profissionais que trabalham com AWS
+
+Arquitetos de soluções cloud
+
+Estudantes de tecnologia
+
+Qualquer pessoa curiosa sobre serverless e IA
+
+Diferenciais
+
+Foco prático: Projeto real
+
+Abordagem serverless: Sem gerenciamento de servidores
+
+Integração completa: Bedrock + outros serviços AWS
+
+Comunidade ativa: Networking e suporte contínuo
+
+Atualizado: Tecnologias mais recentes da AWS
+
+O que você aprenderá
+Configurar e gerenciar contas AWS com boas práticas de segurança e governança usando IAM Identity Center
+Implementar soluções de IA Generativa usando AWS Bedrock, incluindo modelos de fundação e Knowledge Bases
+Criar workflows inteligentes com Bedrock Flow e desenvolver agentes conversacionais com Bedrock Agent
+Construir aplicações completas integrando WhatsApp, API Gateway, bancos de dados e monitoramento
+Há algum requisito ou pré-requisito para o curso?
+Conhecimento básico de programação (Python e Angular)
+Familiaridade com conceitos de cloud computing (desejável, mas não obrigatório)
+Computador com acesso à internet para usar os serviços da AWS
+Disposição para aprender sobre IA Generativa e serviços AWS
+Para quem é este curso:
+Este curso é ideal para desenvolvedores, arquitetos de soluções e profissionais de TI que desejam implementar soluções de IA Generativa na AWS. É perfeito para quem quer aprender desde a configuração básica de contas AWS até o desenvolvimento de aplicações completas com Bedrock. Também é adequado para empreendedores e product managers que querem entender as possibilidades técnicas da IA Generativa para criar novos produtos e serviços.
+Instrutor
+
+Carlos Biagolini
+Arquiteto de nuvem AWS
+
+Olá! Sou Carlos Biagolini, especialista em AWS e entusiasta de tecnologia. Ao longo da minha trajetória, venho ajudando empresas e profissionais a adotarem soluções escaláveis, seguras e eficientes na nuvem.
+
+Aqui na Udemy, meu principal objetivo é compartilhar conhecimento. Transformo a experiência prática que aplico no dia a dia em treinamentos em vídeo que permitem alcançar muito mais pessoas do que seria possível em sessões presenciais. Quero oferecer um conteúdo claro, direto e aplicável, que ajude você a desenvolver competências reais em cloud computing.
+
+Tenho participação ativa em comunidades, acompanho tendências, escuto dúvidas recorrentes e observo desafios enfrentados por outros profissionais. Essa vivência orienta os temas que trago para os cursos, sempre buscando conectar teoria e prática de forma útil e honesta. Acredito em conversas objetivas e transparentes e sigo o espírito da frase atribuída a Linus Torvalds: “Talk is cheap. Show me the code.” Valorizo abordagens práticas com projetos reais, sem abrir mão dos fundamentos — afinal, sem base sólida, qualquer solução corre o risco de virar uma gambiarra difícil de escalar.
+
+Nos meus treinamentos, a honestidade intelectual é um princípio: quando um serviço é bom, eu digo; quando não gosto de algo, explico claramente. Meu compromisso é entregar uma visão realista, profissional e orientada à prática.
+
+Vamos avançar juntos nessa jornada.

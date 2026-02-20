@@ -1,0 +1,333 @@
+Reproduzir
+1. Introdução
+14m
+Reproduzir
+2. Apresentação
+11m
+Reproduzir
+3. Criação de conta AWS
+5m
+Reproduzir
+4. Escolhendo uma região da AWS para trabalhar
+3m
+Reproduzir
+5. Implementação Instância do IAM Identity Center
+4m
+Reproduzir
+6. Criando usuários no IAM Identity Center
+2m
+Reproduzir
+7. Criar grupo de usuários
+4m
+Reproduzir
+8. Criando grupos e conceder acesso a contas pelo IAM Identity center
+4m
+Reproduzir
+9. Ativar MFA para usuário root
+1m
+Reproduzir
+10. Liberar informações de custos para usuários não-root
+2m
+Reproduzir
+11. Criando conta de produção na nossa organização
+4m
+Reproduzir
+12. Mudar nomes de contas da sua organização
+1m
+Reproduzir
+13. Controlando niveis de acesso de usuários no IAM Identity Center
+6m
+Reproduzir
+14. Customizando interface do console da AWS
+9m
+Reproduzir
+15. Criando alertas de custos
+7m
+Reproduzir
+16. Criando alertas de custos baseado em tags
+14m
+Reproduzir
+17. Criando SCPs para sua organização
+9m
+Reproduzir
+18. Configurando AmazonQ Developer Pro para usuários da sua Organização AWS
+3m
+Reproduzir
+19. Windows: Introdução
+5m
+Reproduzir
+20. Windows: WSL Teórico
+8m
+Reproduzir
+21. Windows: WSL Instalação Padrão
+11m
+Reproduzir
+22. Windows: WSL Instalação Ninja
+21m
+Reproduzir
+23. Windows: Dependências WSL
+9m
+Reproduzir
+24. Windows: Git & SSH
+14m
+Reproduzir
+25. Windows: Trocando terminal WSL para ZSH
+8m
+Reproduzir
+26. Windows: AWS CLI Instalação WSL
+4m
+Reproduzir
+27. Windows: AWS CLI Configuração WSL
+22m
+Reproduzir
+28. Windows: AWS CLI Configuração Windows e integração WSL
+9m
+Reproduzir
+29. Windows: Visual Studio Code VSC
+13m
+Reproduzir
+30. Windows: AWS Amazon Q
+7m
+Reproduzir
+31. Windows: AWS Amazon Q Plugin para IDE (VSC)
+16m
+Reproduzir
+32. Windows: AWS Amazon Q CLI
+11m
+Reproduzir
+33. MacOS: Brew
+7m
+Reproduzir
+34. MacOS: Git & SSH
+9m
+Reproduzir
+35. MacOS: Customizações do Terminal
+9m
+Reproduzir
+36. MacOS: Configurando AWS CLI
+18m
+Reproduzir
+37. MacOS: Explorando AmazonQ
+21m
+Reproduzir
+38. Ubuntu: Principais pacotes
+10m
+Reproduzir
+39. Ubuntu: SSH
+8m
+Reproduzir
+40. Ubuntu: AWS CLI
+4m
+Reproduzir
+41. Ubuntu: ZSH
+7m
+Reproduzir
+42. Ubuntu: Aws Cli Configuração de acesso SSO
+14m
+Reproduzir
+43. Ubuntu: AmazonQ
+16m
+Reproduzir
+44. Visão Geral do AWS Bedrock
+1m
+Reproduzir
+45. Modelos disponíveis no AWS Bedrock
+9m
+Reproduzir
+46. Custos do uso do AWS Bedrock
+5m
+Reproduzir
+47. Modelos de Geração de Texto
+8m
+Reproduzir
+48. Debug de Erros
+4m
+Reproduzir
+49. Modelos de Geração de Imagens e Vídeos
+5m
+Reproduzir
+50. Versionamento de Prompts com AWS Prompt Manager
+8m
+Reproduzir
+51. Barreiras de proteção - Guardrails
+21m
+Reproduzir
+52. Raciocínio automatizado para reduzir alucinação de modelos
+13m
+Reproduzir
+53. Desenvolvendo raciocínio automatizado
+27m
+Reproduzir
+54. RAG (Base de Conhecimento) - Teórico
+7m
+Reproduzir
+55. RAG (Base de Conhecimento) - Prático
+18m
+Reproduzir
+56. Agentes de IA uma visão teórica
+9m
+Reproduzir
+57. Criando seu primeiro Agente de IA no Bedrock
+7m
+Reproduzir
+58. Conectando uma base de conhecimento a um Agente de IA
+5m
+Reproduzir
+59. Primeiros passos para criar uma Lambda para seu agente de IA
+21m
+Reproduzir
+60. Empoderando seu AI Agent com AWS Lambda
+18m
+Reproduzir
+61. Protegendo seu Agente com Barreiras de Proteção (Guardrails)
+9m
+Reproduzir
+62. Orquestração de Agente com Multi Agent Collaboration
+15m
+Reproduzir
+63. Fluxos com Bedrock Flow
+18m
+Reproduzir
+64. Apresentação de projeto: YouTube
+22m
+Iniciar
+65. Links para projeto YouTube
+1m
+Reproduzir
+66. Gerando conteúdo - Método 1: Conhecendo o AWS Transcribe
+21m
+Reproduzir
+67. Garantindo que o Python vai conseguir acessar nossa conta na AWS
+10m
+Reproduzir
+68. Apresentando métodos ligados ao AWS Transcribe no Boto3
+15m
+Reproduzir
+69. Preparando ambiente para repositório da slack
+6m
+Reproduzir
+70. Criando um Fluxo para processar vários arquivos com o AWS Transcribe
+8m
+Reproduzir
+71. Gerando conteúdo - Método 2: Conhecendo o AWS Polly
+16m
+Reproduzir
+72. Apresentando método Synthesize Speech
+4m
+Reproduzir
+73. Adicionando método de síntese de audio no nosso projeto
+3m
+Reproduzir
+74. Gerando conteúdo - Método 3: Conhecendo o NotebookLM do Google
+24m
+Reproduzir
+75. Compartilhando conteúdo gerado com GenAI
+4m
+Reproduzir
+76. Bedrock Clients
+3m
+Reproduzir
+77. Preparando ambiente para demonstração do Bedrock
+7m
+Reproduzir
+78. Bedrock Invoke Model
+7m
+Reproduzir
+79. Bedrock Converse
+8m
+Reproduzir
+80. Bedrock saída estruturada
+14m
+Reproduzir
+81. Bedrock interpretando documentos
+9m
+Reproduzir
+82. Combinando técnicas no Bedrock
+7m
+Reproduzir
+83. Automatizando a criação de resumos de pdfs
+10m
+Reproduzir
+84. Custos ligados a estrutura de dado escolhida
+10m
+Reproduzir
+85. Escolhendo a ferramenta certa de IA
+5m
+Reproduzir
+86. Conhecendo o Amazon Translate
+3m
+Reproduzir
+87. Amazon Bedrock vs Translate: quem ganha?
+7m
+Reproduzir
+88. Configurar Google Cloud Plataform para uso do YouTube Data API v3
+15m
+Reproduzir
+89. Obtendo dados de vídeos do YouTube
+17m
+Reproduzir
+90. Definindo relação de vídeos e conteúdo
+4m
+Reproduzir
+91. Criando arquivo com metadados para os vídeos
+21m
+Reproduzir
+92. Aplicando metadados
+2m
+Reproduzir
+93. Visão geral do WhatsApp Cloud API
+2m
+Iniciar
+94. Links para projeto WhatsApp
+1m
+Reproduzir
+95. Apresentação de projeto: WhatsApp
+16m
+Reproduzir
+96. Conhecendo a plataforma Whatsapp Business
+16m
+Reproduzir
+97. Criando um App no Developers Facebook
+5m
+Reproduzir
+98. Primeiros passos na API do Whatsapp Cloud
+13m
+Reproduzir
+99. Postman: Importando Coleções da Meta para seu Workspace
+15m
+Reproduzir
+100. Boas práticas e templates no WhatsApp Cloud API
+13m
+Reproduzir
+101. Integrando WhatsApp Cloud <> AWS: Arquitetura simplificada
+5m
+Reproduzir
+102. Criando uma IAM Role para AWS Lambda
+9m
+Reproduzir
+103. Básico de uma AWS Lambda
+12m
+Reproduzir
+104. Criando um API Gateway
+16m
+Reproduzir
+105. Fazendo inscrição em webhook do Whatsapp Cloud API - Parte 1
+9m
+Reproduzir
+106. Fazendo inscrição em webhook do Whatsapp Cloud API - Parte 2
+7m
+Reproduzir
+107. Teste de envio de mensagens da Lambda
+11m
+Reproduzir
+108. Salvando logs de mensagens do WhatsApp no AWS S3
+5m
+Reproduzir
+109. Criando um Token da Meta de longa duração
+8m
+Reproduzir
+110. Revogando Token de longa duração e considerações de segurança do seu ambiente
+5m
+Reproduzir
+111. Integrando Bedrock ao WhatsApp
+10m

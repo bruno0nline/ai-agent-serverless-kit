@@ -80,3 +80,9 @@ Instaladores/
 # Personal notes (não compartilhar)
 notas-pessoais/
 TODO-privado.md
+wsl.localhost/
+backup/
+*.bak
+test_results_*.json
+cost_report.json
+bedrock_config.json
