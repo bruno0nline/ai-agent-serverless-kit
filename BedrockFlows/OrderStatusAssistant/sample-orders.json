@@ -1,0 +1,304 @@
+{
+  "VeganSweetOrders": [
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "e97c7827-7f6c-4fd0-9e84-61a7ad836b6c"},
+          "customer_id": {"N": "1255"},
+          "description": {"S": "Almond caramel delight"},
+          "order_date": {"S": "2025-09-11"},
+          "rating": {"N": "4"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "55f33cff-2686-4a9b-ab45-e0ab18951d0f"},
+          "customer_id": {"N": "7220"},
+          "description": {"S": "Vegan marshmallow treat"},
+          "order_date": {"S": "2025-09-15"},
+          "rating": {"N": "4"},
+          "status": {"S": "Processing"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "155acd09-61d6-46a0-9fb6-8be1e4441bff"},
+          "customer_id": {"N": "1879"},
+          "description": {"S": "Almond caramel delight"},
+          "order_date": {"S": "2025-08-31"},
+          "rating": {"N": "5"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "f0e74f98-1c76-47fe-9975-240c6becf7d4"},
+          "customer_id": {"N": "4582"},
+          "description": {"S": "Hazelnut nougat bar"},
+          "order_date": {"S": "2025-09-13"},
+          "rating": {"N": "3"},
+          "status": {"S": "Cancelled"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "6dc7b42d-7f37-4d84-b897-9870955e5595"},
+          "customer_id": {"N": "3383"},
+          "description": {"S": "Vegan chocolate fudge"},
+          "order_date": {"S": "2025-09-22"},
+          "rating": {"N": "4"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "d3883db8-2427-4457-a810-a86e0b3c461b"},
+          "customer_id": {"N": "6622"},
+          "description": {"S": "Sugar-free dark chocolate"},
+          "order_date": {"S": "2025-09-08"},
+          "rating": {"N": "2"},
+          "status": {"S": "Processing"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "39f4234f-d977-4c94-b629-a53446ffef65"},
+          "customer_id": {"N": "8952"},
+          "description": {"S": "Organic fruit chocolate"},
+          "order_date": {"S": "2025-09-08"},
+          "rating": {"N": "2"},
+          "status": {"S": "Cancelled"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "bb924ede-5dda-4e61-8054-85636758528f"},
+          "customer_id": {"N": "2196"},
+          "description": {"S": "Peanut butter cup"},
+          "order_date": {"S": "2025-09-19"},
+          "rating": {"N": "5"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "cf42fdfb-f4d7-48b2-87d9-d3314a09cf51"},
+          "customer_id": {"N": "2782"},
+          "description": {"S": "Sugar-free dark chocolate"},
+          "order_date": {"S": "2025-09-21"},
+          "rating": {"N": "2"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "c49f309e-95b6-43d2-a3d0-26bb53df183c"},
+          "customer_id": {"N": "2251"},
+          "description": {"S": "Almond caramel delight"},
+          "order_date": {"S": "2025-09-07"},
+          "rating": {"N": "1"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"},
+          "customer_id": {"N": "5001"},
+          "description": {"S": "Coconut chocolate bar"},
+          "order_date": {"S": "2025-09-25"},
+          "rating": {"N": "5"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "b2c3d4e5-f6a7-8901-bcde-f12345678901"},
+          "customer_id": {"N": "5002"},
+          "description": {"S": "Mint chocolate truffle"},
+          "order_date": {"S": "2025-09-26"},
+          "rating": {"N": "4"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "c3d4e5f6-a7b8-9012-cdef-123456789012"},
+          "customer_id": {"N": "5003"},
+          "description": {"S": "Raspberry dark chocolate"},
+          "order_date": {"S": "2025-09-27"},
+          "rating": {"N": "5"},
+          "status": {"S": "Processing"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "d4e5f6a7-b8c9-0123-def1-234567890123"},
+          "customer_id": {"N": "5004"},
+          "description": {"S": "Orange zest chocolate"},
+          "order_date": {"S": "2025-09-28"},
+          "rating": {"N": "3"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "e5f6a7b8-c9d0-1234-ef12-345678901234"},
+          "customer_id": {"N": "5005"},
+          "description": {"S": "Cashew butter chocolate"},
+          "order_date": {"S": "2025-09-29"},
+          "rating": {"N": "4"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "f6a7b8c9-d0e1-2345-f123-456789012345"},
+          "customer_id": {"N": "5006"},
+          "description": {"S": "Pistachio chocolate bark"},
+          "order_date": {"S": "2025-09-30"},
+          "rating": {"N": "5"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "a7b8c9d0-e1f2-3456-1234-567890123456"},
+          "customer_id": {"N": "5007"},
+          "description": {"S": "Espresso chocolate square"},
+          "order_date": {"S": "2025-10-01"},
+          "rating": {"N": "4"},
+          "status": {"S": "Processing"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "b8c9d0e1-f2a3-4567-2345-678901234567"},
+          "customer_id": {"N": "5008"},
+          "description": {"S": "Lavender white chocolate"},
+          "order_date": {"S": "2025-10-02"},
+          "rating": {"N": "3"},
+          "status": {"S": "Cancelled"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "c9d0e1f2-a3b4-5678-3456-789012345678"},
+          "customer_id": {"N": "5009"},
+          "description": {"S": "Maple pecan chocolate"},
+          "order_date": {"S": "2025-10-03"},
+          "rating": {"N": "5"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "d0e1f2a3-b4c5-6789-4567-890123456789"},
+          "customer_id": {"N": "5010"},
+          "description": {"S": "Cinnamon spice chocolate"},
+          "order_date": {"S": "2025-10-04"},
+          "rating": {"N": "4"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "e1f2a3b4-c5d6-7890-5678-901234567890"},
+          "customer_id": {"N": "5011"},
+          "description": {"S": "Ginger dark chocolate"},
+          "order_date": {"S": "2025-10-05"},
+          "rating": {"N": "5"},
+          "status": {"S": "Processing"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "f2a3b4c5-d6e7-8901-6789-012345678901"},
+          "customer_id": {"N": "5012"},
+          "description": {"S": "Blueberry chocolate bite"},
+          "order_date": {"S": "2025-10-06"},
+          "rating": {"N": "4"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "a3b4c5d6-e7f8-9012-7890-123456789012"},
+          "customer_id": {"N": "5013"},
+          "description": {"S": "Strawberry chocolate cream"},
+          "order_date": {"S": "2025-10-07"},
+          "rating": {"N": "3"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "b4c5d6e7-f8a9-0123-8901-234567890123"},
+          "customer_id": {"N": "5014"},
+          "description": {"S": "Lemon chocolate tart"},
+          "order_date": {"S": "2025-10-08"},
+          "rating": {"N": "2"},
+          "status": {"S": "Cancelled"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "c5d6e7f8-a9b0-1234-9012-345678901234"},
+          "customer_id": {"N": "5015"},
+          "description": {"S": "Cherry chocolate bonbon"},
+          "order_date": {"S": "2025-10-09"},
+          "rating": {"N": "5"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    }
+  ]
+}

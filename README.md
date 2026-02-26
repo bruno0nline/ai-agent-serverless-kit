@@ -391,7 +391,7 @@ Seguir instruções em: [`Documentação/Bedrock/RESUMO-EXECUTIVO.md`](Documenta
 
 ---
 
-**Última atualização:** 19/02/2026  
-**Versão:** 1.1 - Agent RH com Lambda Action Group e Guardrail funcionando
+**Última atualização:** 26/02/2026  
+**Versão:** 2.0 - Repositório reorganizado e Flow OrderStatusAssistant funcionando
 
 

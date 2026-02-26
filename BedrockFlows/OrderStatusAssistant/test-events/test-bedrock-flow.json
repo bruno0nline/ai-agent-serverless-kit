@@ -1,0 +1,18 @@
+{
+  "node": {
+    "name": "LambdaFunctionNode_1",
+    "inputs": [
+      {
+        "name": "codeHookInput",
+        "expression": "$.data",
+        "value": "d092ec33-e97f-407e-0fda-3b004cc047bf",
+        "type": "STRING"
+      }
+    ]
+  },
+  "flow": {
+    "aliasId": "TSTALIASID",
+    "arn": "arn:aws:bedrock:us-east-1:471112955224:flow/F4W8Y84480"
+  },
+  "messageVersion": "1.0"
+}

@@ -1,0 +1,124 @@
+{
+  "VeganSweetOrders": [
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "e97c7827-7f6c-4fd0-9e84-61a7ad836b6c"},
+          "customer_id": {"N": "1255"},
+          "description": {"S": "Almond caramel delight"},
+          "order_date": {"S": "2025-09-11"},
+          "rating": {"N": "4"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "55f33cff-2686-4a9b-ab45-e0ab18951d0f"},
+          "customer_id": {"N": "7220"},
+          "description": {"S": "Vegan marshmallow treat"},
+          "order_date": {"S": "2025-09-15"},
+          "rating": {"N": "4"},
+          "status": {"S": "Processing"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "155acd09-61d6-46a0-9fb6-8be1e4441bff"},
+          "customer_id": {"N": "1879"},
+          "description": {"S": "Almond caramel delight"},
+          "order_date": {"S": "2025-08-31"},
+          "rating": {"N": "5"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "f0e74f98-1c76-47fe-9975-240c6becf7d4"},
+          "customer_id": {"N": "4582"},
+          "description": {"S": "Hazelnut nougat bar"},
+          "order_date": {"S": "2025-09-13"},
+          "rating": {"N": "3"},
+          "status": {"S": "Cancelled"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "6dc7b42d-7f37-4d84-b897-9870955e5595"},
+          "customer_id": {"N": "3383"},
+          "description": {"S": "Vegan chocolate fudge"},
+          "order_date": {"S": "2025-09-22"},
+          "rating": {"N": "4"},
+          "status": {"S": "Shipped"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "d3883db8-2427-4457-a810-a86e0b3c461b"},
+          "customer_id": {"N": "6622"},
+          "description": {"S": "Sugar-free dark chocolate"},
+          "order_date": {"S": "2025-09-08"},
+          "rating": {"N": "2"},
+          "status": {"S": "Processing"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "39f4234f-d977-4c94-b629-a53446ffef65"},
+          "customer_id": {"N": "8952"},
+          "description": {"S": "Organic fruit chocolate"},
+          "order_date": {"S": "2025-09-08"},
+          "rating": {"N": "2"},
+          "status": {"S": "Cancelled"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "bb924ede-5dda-4e61-8054-85636758528f"},
+          "customer_id": {"N": "2196"},
+          "description": {"S": "Peanut butter cup"},
+          "order_date": {"S": "2025-09-19"},
+          "rating": {"N": "5"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "cf42fdfb-f4d7-48b2-87d9-d3314a09cf51"},
+          "customer_id": {"N": "2782"},
+          "description": {"S": "Sugar-free dark chocolate"},
+          "order_date": {"S": "2025-09-21"},
+          "rating": {"N": "2"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "order_id": {"S": "c49f309e-95b6-43d2-a3d0-26bb53df183c"},
+          "customer_id": {"N": "2251"},
+          "description": {"S": "Almond caramel delight"},
+          "order_date": {"S": "2025-09-07"},
+          "rating": {"N": "1"},
+          "status": {"S": "Delivered"}
+        }
+      }
+    }
+  ]
+}

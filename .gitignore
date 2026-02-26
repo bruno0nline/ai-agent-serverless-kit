@@ -86,3 +86,10 @@ backup/
 test_results_*.json
 cost_report.json
 bedrock_config.json
+
+# Reorganização 26/02/2026
+*.Zone.Identifier
+backup/screenshots-old/
+python_dependencies.zip
+aws-lambda-layer.zip
+PythonAwsBedrockActionGroupDemo/python/
