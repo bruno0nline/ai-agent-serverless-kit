@@ -23,14 +23,42 @@ Kit completo para criar Agentes de IA serverless com foco em:
 
 ## ✨ Features
 
-- ✅ Agent de IA com RAG (Retrieval-Augmented Generation)
-- ✅ Knowledge Base integrada (documentos em S3)
-- ✅ Embeddings com Amazon Titan v2.0
-- ✅ Vector Database (S3 Vectors - mais barato)
-- ✅ Respostas contextualizadas baseadas em documentos
+- ✅ **RAG (Retrieval-Augmented Generation)**
+  - 3 Knowledge Bases ativas
+  - Embeddings com Amazon Titan v2.0
+  - Vector Database (S3 Vectors - mais barato)
+  - Respostas contextualizadas baseadas em documentos
+  
+- ✅ **Multi-Agent Collaboration** ✅ **Concluído 20/02/2026**
+  - Supervisor Agent: Patrícia (Amazon Nova Pro 1.0)
+  - Collaborator Agent RH: Carla (Amazon Nova Micro 1.0)
+  - Collaborator Agent Vendas: Rafael (Claude 3.5 Haiku v1)
+  - Orquestração inteligente de tarefas
+  
+- ✅ **Guardrails**
+  - Filtro de conteúdo ofensivo
+  - Raciocínio automatizado (Automated Reasoning) para segurança AWS
+  - Validação de conformidade com políticas
+  
 - ✅ **Lambda Action Group** - Consulta de feriados brasileiros
-- ✅ **Guardrail** - Filtro de conteúdo ofensivo
-- ✅ **Lambda Layer** - Biblioteca holidays (Docker build)
+  - Lambda Layer com biblioteca holidays (Docker build)
+  - Integração com Bedrock Agent
+  
+- ✅ **Bedrock Flows** ✅ **Concluído 26/02/2026**
+  - Flow automatizado de consulta de pedidos (OrderStatusAssistant)
+  - Integração Lambda + DynamoDB + Prompt Management
+  - Respostas personalizadas e amigáveis
+  
+- ✅ **Prompt Management**
+  - Versionamento de prompts
+  - Variáveis dinâmicas ({{status}})
+  - Templates reutilizáveis
+  - Prompt: OrderStatusResponder
+  
+- ✅ **DynamoDB Integration**
+  - Tabela VeganSweetOrders (25 pedidos)
+  - Lambda consultando dados em tempo real
+  
 - ✅ Monitoramento com CloudWatch
 - ✅ Deploy em 15 minutos
 - ✅ Documentação completa
@@ -69,70 +97,125 @@ export REGION="us-east-1"
 
 ```
 .
-├── Documentação/
-│   ├── Inteligência Artificial sem servidor na AWS.md  # Documentação principal
-│   ├── Bedrock/                                        # Troubleshooting Bedrock
-│   │   ├── RESUMO-EXECUTIVO.md                        # 🎯 Comece aqui!
-│   │   ├── README.md                                  # Índice da pasta
-│   │   ├── resolucao-throttling-quotas.md             # Guia completo
-│   │   ├── ticket-aws-support-bedrock-quotas.md       # Template de ticket
-│   │   └── quotas-ajustaveis-prioritarias.md          # Análise de quotas
+├── 📄 Arquivos Raiz
+│   ├── README.md                          # Este arquivo
+│   ├── LICENSE                            # Licença MIT
+│   ├── .gitignore                         # Arquivos ignorados pelo Git
+│   ├── AI.code-workspace                  # Workspace do VS Code
+│   ├── CHANGELOG.md                       # Histórico de mudanças
+│   ├── ROADMAP.md                         # Planejamento do projeto
+│   ├── ARCHITECTURE.md                    # Arquitetura técnica
+│   ├── DEPLOYMENT.md                      # Guia de deploy
+│   ├── CONTRIBUTING.md                    # Guia de contribuição
+│   ├── TECH-STACK-2026.md                # Stack tecnológica
+│   ├── GUIA-REPLICACAO.md                # Guia de replicação
+│   ├── DOCUMENTACAO-INDICE.md            # Índice da documentação
+│   ├── PROMPT-CONTEXTO.md                # Contexto para IA
+│   ├── PROMPT-RAPIDO.txt                 # Prompt rápido
+│   └── bedrock-quotas.json               # Quotas do Bedrock
+│
+├── 🤖 BedrockFlows/                       # Flows do Bedrock
+│   └── OrderStatusAssistant/             # Flow de consulta de pedidos
+│       ├── README.md
+│       ├── lambda_function.py            # Lambda atual
+│       ├── lambda_function_OLD.py        # Versão antiga (referência)
+│       ├── sample-orders.json            # 25 pedidos (atual)
+│       ├── sample-orders-10.json         # 10 pedidos (testes)
+│       ├── PROMPT-INSTRUCTIONS.md        # Doc do prompt
+│       ├── prompt-text.txt               # Texto do prompt
+│       ├── deploy-lambda.sh              # Script de deploy
+│       ├── deploy-dynamodb.sh            # Script de deploy
+│       └── test-events/                  # Eventos de teste
+│
+├── 🐍 PythonAwsBedrockActionGroupDemo/   # Action Group (Feriados)
+│   ├── README.md
+│   ├── lambda_function_bedrock.py        # Handler Bedrock
+│   ├── lambda_function_regular.py        # Handler standalone
+│   ├── requirements.txt
+│   ├── Dockerfile                        # Build do Layer
+│   ├── create_zip.py
+│   ├── COMANDOS-WINDOWS.md
+│   └── test/                             # Eventos de teste
+│
+├── ⚡ Lambda/                             # Outras Lambdas
+│   ├── README.md
+│   ├── INTEGRATION-GUIDE.md
+│   ├── action-groups/                    # Action Groups
+│   ├── api/                              # APIs
+│   └── webhooks/                         # Webhooks
+│
+├── 📚 RAG-Knowledge-Base/                # Documentos para RAG
+│   ├── README.md
+│   ├── KB-RH/                            # Políticas de RH
+│   ├── KB-Cursos/                        # Catálogo de cursos
+│   └── KB-Aws-Security/                  # Docs AWS
+│
+├── 📖 Documentação/                       # Documentação do projeto
+│   ├── Inteligência Artificial AWS Bedrock.md
+│   ├── agents-maestriacloud.md           # Multi-Agent
+│   ├── CUSTOS.md                         # Análise de custos
 │   ├── comandos-kiro.txt
 │   ├── prompt-kiro.txt
-│   └── Script Bruno.txt
+│   ├── Script Bruno.txt
+│   ├── Bedrock/                          # Troubleshooting Bedrock
+│   │   ├── RESUMO-EXECUTIVO.md
+│   │   ├── README.md
+│   │   ├── resolucao-throttling-quotas.md
+│   │   ├── ticket-aws-support-bedrock-quotas.md
+│   │   └── quotas-ajustaveis-prioritarias.md
+│   └── Kiro/                             # Docs do Kiro IDE
 │
-├── PythonAwsBedrockActionGroupDemo/                   # Lambda Action Group
-│   ├── lambda_function_bedrock.py                     # Handler para Bedrock
-│   ├── lambda_function_regular.py                     # Handler standalone
-│   ├── requirements.txt                               # Dependências Python
-│   ├── Dockerfile                                     # Build do Layer
-│   ├── create_zip.py                                  # Script auxiliar
-│   ├── COMANDOS-WINDOWS.md                            # Guia Windows
-│   ├── README.md                                      # Documentação
-│   └── test/                                          # Eventos de teste
-│       ├── lambda_function_bedrock/
-│       └── lambda_function_regular/
-│
-├── Lambda/                                            # Outras Lambdas
-│   ├── action-groups/
-│   │   ├── verificar-status-servico/
-│   │   ├── consultar-ticket/
-│   │   └── criar-ticket/
-│   ├── api/
-│   │   └── invoke-agent/
-│   ├── webhooks/
-│   │   └── slack-integration/
-│   ├── INTEGRATION-GUIDE.md
-│   └── README.md
-│
-├── IA na AWS/
-│   ├── Kiro/                                          # Workspace Kiro IDE
-│   └── RAG-Knowledge-Base/                            # Documentos para RAG
-│       ├── aws-well-architected.md
-│       ├── aws-security-best-practices.md
-│       ├── aws-compute-services.md
-│       └── README.md
-│
-├── Scripts/                                            # Scripts Python AWS
+├── 🔧 Scripts/                            # Scripts Python AWS
 │   ├── S3/
 │   ├── EC2/
 │   ├── IAM/
 │   ├── RDS/
 │   ├── CloudWatch/
-│   └── Lambda/
+│   ├── Lambda/
+│   └── DynamoDB/
 │
-├── Configurações/
+├── 🧪 tests/                              # Scripts de teste
+│   ├── README.md
+│   ├── test_multi_agent.py
+│   ├── list_agents.py
+│   ├── monitor_costs.py
+│   └── backup_config.py
+│
+├── ⚙️ config/                             # Configurações
 │   ├── variavel-de-ambientes.txt
 │   └── profile-sso.txt
 │
-├── Instaladores/
-│   ├── kiro-ide-0.9.2-stable-win32-x64.exe
-│   └── AWSToolkitPackage.v17.vsix
+├── 📸 Screenshots/                        # Screenshots importantes
+│   ├── README.md
+│   ├── flow-funcionando-sucesso.png
+│   ├── flow-teste-completo.png
+│   └── prompt-management-config.png
 │
-├── Screenshots/                                        # Evidências de erros
+├── ☁️ aws-resources/                      # Recursos AWS
+│   ├── RECURSOS-AWS-COMPLETO.md          # 📋 Inventário completo
+│   ├── bedrock/                          # Configs Bedrock
+│   ├── lambda/                           # Configs Lambda
+│   ├── iam/                              # Policies IAM
+│   └── dynamodb/                         # Schemas DynamoDB
 │
-├── bedrock-quotas.json                                # Quotas do Bedrock
-└── README.md                                          # Este arquivo
+├── 📚 docs/                               # Documentação auxiliar
+│   ├── git/                              # Docs Git
+│   │   ├── GIT-SETUP.md
+│   │   ├── PUSH-TO-GITHUB.md
+│   │   ├── git-push.sh
+│   │   └── git-push.ps1
+│   ├── curso/                            # Material do curso
+│   │   ├── Domine AWS Bedrock...txt
+│   │   └── Conteudo do curso.txt
+│   └── instaladores/                     # Info sobre instaladores
+│       └── README.md
+│
+├── 💾 backup/                             # Backups locais
+│   └── screenshots-old/                  # Screenshots antigos
+│
+└── 📦 Instaladores/                       # Instaladores (local only)
+    ├── kiro-ide-0.9.2-stable-win32-x64.exe
+    └── AWSToolkitPackage.v17.vsix
 ```
 
 ---
